@@ -423,6 +423,11 @@ spinbutton:not(.vertical) image, entry image {
 
 spinbutton:not(.vertical) image:hover, entry image:hover {
   color: @selection_bg_normal;
+  background-color: transparent;
+}
+
+button.up:hover, button.down:hover {
+  background-color: transparent; color: @selection_bg_normal;
 }
 
 spinbutton:not(.vertical) image:active, entry image:active {
@@ -526,43 +531,25 @@ button.suggested-action:hover { border-color: @selection_bg_normal; }
 
 button.suggested-action:active, button.suggested-action:checked { background-color: alpha(@selection_bg_normal,0.3); color: @button_fg_normal; border-color: @selection_bg_normal }
 
-button.suggested-action:active:hover, button.suggested-action:checked:hover { background-color: alpha(@selection_bg_normal,0.3); color: @button_fg_normal; border-color: @selection_bg_normal }
+button.suggested-action:active:hover, button.suggested-action:checked:hover { background-color: alpha(@selection_bg_normal,0.3); color: @button_fg_normal; border-color: @selection_bg_normal; }
 
 button.suggested-action.flat:disabled { border-color: transparent; background-color: transparent; background-image: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; color: alpha(@selection_bg_normal,0.8); }
 
 button.suggested-action:disabled:active, button.suggested-action:disabled:checked { color: alpha(@button_fg_normal,0.7); background-color: alpha(@selection_bg_normal,0.15); border-color: alpha(@selection_bg_normal,0.5); }
 
-button.destructive-action { color: white; outline-color: alpha(@accent_color,0.5); background-color: mix(currentColor,@destructive_bg_color,0.9); }
+button.destructive-action { color: @button_fg_normal; background-color: alpha(@button_fg_negative,0.2); border: 1px solid alpha(@button_fg_negative,0.8); }
 
-button.destructive-action:hover { color: white; background-color: mix(currentColor,@destructive_bg_color,0.853); box-shadow: none; }
+button.destructive-action:hover { border-color: @button_fg_negative; }
 
-button.destructive-action:active, button.destructive-action:checked { color: white; background-color: mix(currentColor,@destructive_bg_color,0.7); box-shadow: none; text-shadow: none; -gtk-icon-shadow: none; }
+button.destructive-action:active, button.destructive-action:checked { background-color: alpha(@button_fg_negative,0.3); color: @button_fg_normal; border-color: @button_fg_negative; }
 
-button.destructive-action:active:hover, button.destructive-action:checked:hover { background-color: mix(currentColor,@destructive_bg_color,0.65); }
+button.destructive-action:active:hover, button.destructive-action:checked:hover { background-color: alpha(@button_fg_negative,0.3); color: @button_fg_normal; border-color: @button_fg_negative; }
 
-button.destructive-action.flat:disabled { border-color: transparent; background-color: transparent; background-image: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; color: alpha(@destructive_bg_color,0.8); }
+.stack-switcher > button > label { padding-left: 3px; padding-right: 3px; }
 
-button.destructive-action:disabled { color: mix(@window_fg_normal,@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.9); text-shadow: none; -gtk-icon-shadow: none; box-shadow: none; }
+.stack-switcher > button > image { padding-left: 3px; padding-right: 3px; padding-top: 1px; padding-bottom: 1px; }
 
-button.destructive-action:disabled:active, button.destructive-action:disabled:checked { color: mix(white,shade(mix(@destructive_bg_color,@view_bg_color,0.15),0.92),0.4); background-color: mix(currentColor,@destructive_bg_color,0.7); box-shadow: none; }
-
-.osd button.destructive-action { color: rgba(255, 255, 255, 0.9); border-color: transparent; background-color: rgba(0, 0, 0, 0.65); background-clip: padding-box; outline-color: rgba(255, 255, 255, 0.2); }
-
-.osd button.destructive-action:hover { color: white; border-color: transparent; background-color: alpha(mix(black,currentColor,0.15),0.65); background-clip: padding-box; outline-color: rgba(255, 255, 255, 0.2); }
-
-.osd button.destructive-action:active:backdrop, .osd button.destructive-action:active, .osd button.destructive-action:checked:backdrop, .osd button.destructive-action:checked { color: white; border-color: transparent; background-color: alpha(mix(black,currentColor,0.25),0.65); background-clip: padding-box; outline-color: rgba(255, 255, 255, 0.2); }
-
-.osd button.destructive-action:disabled:backdrop, .osd button.destructive-action:disabled { color: mix(rgba(255, 255, 255, 0.9),black,0.5); border-color: transparent; background-color: transparent; background-image: image(rgba(0, 0, 0, 0.65)); background-clip: padding-box; box-shadow: none; text-shadow: none; -gtk-icon-shadow: none; }
-
-.osd button.destructive-action:backdrop { color: rgba(255, 255, 255, 0.9); border-color: transparent; background-color: transparent; background-image: image(alpha(@destructive_bg_color,0.5)); background-clip: padding-box; box-shadow: none; text-shadow: none; -gtk-icon-shadow: none; }
-
-.stack-switcher > button { outline-offset: -3px; }
-
-.stack-switcher > button > label { padding-left: 6px; padding-right: 6px; }
-
-.stack-switcher > button > image { padding-left: 6px; padding-right: 6px; padding-top: 3px; padding-bottom: 3px; }
-
-.stack-switcher > button.text-button { padding-left: 10px; padding-right: 10px; }
+.stack-switcher > button.text-button { padding-left: 5px; padding-right: 5px; }
 
 .stack-switcher > button.image-button { padding-left: 2px; padding-right: 2px; }
 
@@ -570,63 +557,48 @@ button.destructive-action:disabled:active, button.destructive-action:disabled:ch
 
 button.font separator, button.file separator { background-color: transparent; }
 
-button.font > box > box > label { font-weight: bold; }
-
 .primary-toolbar button { -gtk-icon-shadow: none; }
 
-button.circular { border-radius: 9999px; -gtk-outline-radius: 9999px; padding: 4px; background-origin: padding-box, border-box; background-clip: padding-box, border-box; }
+button.circular { border-radius: 6px; padding: 4px; background-origin: padding-box, border-box; background-clip: padding-box, border-box; }
 
 button.circular label { padding: 0; }
-
-button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) { color: @window_fg_normal; outline-color: alpha(@accent_color,0.5); background-color: mix(currentColor,@window_bg_color,0.9); border-color: transparent; }
-
-button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) { color: @window_fg_normal; background-color: mix(currentColor,@window_bg_color,0.853); box-shadow: none; border-color: transparent; }
 
 stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image { animation: needs_attention 150ms ease-in; background-image: radial-gradient(farthest-side, @accent_color 96%, transparent); background-size: 6px 6px; background-repeat: no-repeat; background-position: right 3px; }
 
 stacksidebar row.needs-attention > label:dir(rtl), .stack-switcher > button.needs-attention > label:dir(rtl), .stack-switcher > button.needs-attention > image:dir(rtl) { background-position: left 3px; }
 
-.inline-toolbar toolbutton > button { color: @window_fg_normal; outline-color: alpha(@accent_color,0.5); background-color: mix(currentColor,@window_bg_color,0.9); }
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .xfce4-panel.background button menu .linked button, headerbar .linked.raised button:not(:only-child), headerbar .linked button:not(:only-child), headerbar > .stack-switcher.linked > button:not(:only-child), .titlebar .linked.raised button:not(:only-child), .titlebar .linked button:not(:only-child), .titlebar > .stack-switcher.linked > button:not(:only-child), .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .linked > button, toolbar.inline-toolbar toolbutton > button.flat { border-radius: 0; }
 
-.inline-toolbar toolbutton > button:hover { color: @window_fg_normal; background-color: mix(currentColor,@window_bg_color,0.853); box-shadow: none; }
+.linked:not(.vertical) > combobox > box > button.combo:hover, filechooser .path-bar.linked > button:hover, .xfce4-panel.background button menu .linked button:hover, headerbar .linked.raised button:not(:only-child):hover, headerbar .linked button:not(:only-child):hover, headerbar > .stack-switcher.linked > button:not(:only-child):hover, .titlebar .linked.raised button:not(:only-child):hover, .titlebar .linked button:not(:only-child):hover, .titlebar > .stack-switcher.linked > button:not(:only-child):hover, .linked:not(.vertical) > spinbutton:not(.vertical):focus, .linked:not(.vertical) > entry:focus, .inline-toolbar button:hover, .linked > button:hover, toolbar.inline-toolbar toolbutton > button.flat:hover { border: 1px solid @selection_bg_normal; }
 
-.inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked { color: @window_fg_normal; background-color: mix(currentColor,@window_bg_color,0.7); box-shadow: none; text-shadow: none; -gtk-icon-shadow: none; }
+.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .xfce4-panel.background button menu .linked button:first-child, headerbar .linked button:first-child:not(:only-child), .titlebar .linked button:first-child:not(:only-child), .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat { border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
 
-.inline-toolbar toolbutton > button:active:hover, .inline-toolbar toolbutton > button:checked:hover { background-color: mix(currentColor,@window_bg_color,0.65); }
+.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .xfce4-panel.background button menu .linked button:last-child, headerbar .linked button:last-child:not(:only-child), .titlebar .linked button:last-child:not(:only-child), .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat { border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
 
-.inline-toolbar toolbutton > button:disabled { color: mix(@window_fg_normal,@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.9); text-shadow: none; -gtk-icon-shadow: none; box-shadow: none; }
-
-.inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked { color: mix(@window_fg_normal,@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.7); box-shadow: none; }
-
-.inline-toolbar toolbutton > button:backdrop { color: mix(@window_fg_normal,@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.9); text-shadow: none; -gtk-icon-shadow: none; }
-
-.inline-toolbar toolbutton > button:backdrop:active, .inline-toolbar toolbutton > button:backdrop:checked { color: mix(@window_fg_normal,@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.7); }
-
-.inline-toolbar toolbutton > button:backdrop:disabled { color: mix(mix(@window_fg_normal,@window_bg_color,0.5),@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.9); text-shadow: none; -gtk-icon-shadow: none; }
-
-.inline-toolbar toolbutton > button:backdrop:disabled:active, .inline-toolbar toolbutton > button:backdrop:disabled:checked { color: mix(@window_fg_normal,@window_bg_color,0.5); background-color: mix(currentColor,@window_bg_color,0.7); }
-
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .xfce4-panel.background button menu .linked button, headerbar .linked.raised button:not(:only-child), headerbar .linked button:not(:only-child), headerbar > .stack-switcher.linked > button:not(:only-child), .titlebar .linked.raised button:not(:only-child), .titlebar .linked button:not(:only-child), .titlebar > .stack-switcher.linked > button:not(:only-child), .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .linked > button, toolbar.inline-toolbar toolbutton > button.flat { border-left-color: alpha(currentColor,0.15); border-right-color: alpha(currentColor,0.15); border-right-style: none; border-radius: 0; -gtk-outline-radius: 0; }
-
-.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .xfce4-panel.background button menu .linked button:first-child, headerbar .linked button:first-child:not(:only-child), .titlebar .linked button:first-child:not(:only-child), .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat { border-left-color: transparent; border-top-left-radius: 9px; border-bottom-left-radius: 9px; -gtk-outline-top-left-radius: 9px; -gtk-outline-bottom-left-radius: 9px; }
-
-.linked:not(.vertical) > combobox:first-child > box > button.combo:not(button):focus, combobox.linked button:not(button):focus:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:not(button):focus:dir(rtl):last-child, filechooser .path-bar.linked > button:not(button):focus:dir(ltr):first-child, .xfce4-panel.background button menu .linked button:not(button):focus:first-child, headerbar .linked button:not(button):focus:first-child:not(:only-child), .titlebar .linked button:not(button):focus:first-child:not(:only-child), .linked:not(.vertical) > spinbutton:not(button):focus:first-child:not(.vertical), .linked:not(.vertical) > entry:not(button):focus:first-child, .inline-toolbar button:not(button):focus:first-child, .linked > button:not(button):focus:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat:not(button):focus { border-left-color: alpha(@accent_color,0.5); }
-
-.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .xfce4-panel.background button menu .linked button:last-child, headerbar .linked button:last-child:not(:only-child), .titlebar .linked button:last-child:not(:only-child), .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat { border-right-color: transparent; border-right-style: solid; border-top-right-radius: 9px; border-bottom-right-radius: 9px; -gtk-outline-top-right-radius: 9px; -gtk-outline-bottom-right-radius: 9px; }
-
-.linked:not(.vertical) > combobox:last-child > box > button.combo:not(button):focus, combobox.linked button:not(button):focus:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:not(button):focus:dir(rtl):first-child, filechooser .path-bar.linked > button:not(button):focus:dir(ltr):last-child, .xfce4-panel.background button menu .linked button:not(button):focus:last-child, headerbar .linked button:not(button):focus:last-child:not(:only-child), .titlebar .linked button:not(button):focus:last-child:not(:only-child), .linked:not(.vertical) > spinbutton:not(button):focus:last-child:not(.vertical), .linked:not(.vertical) > entry:not(button):focus:last-child, .inline-toolbar button:not(button):focus:last-child, .linked > button:not(button):focus:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat:not(button):focus { border-right-color: alpha(@accent_color,0.5); }
-
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .xfce4-panel.background button menu .linked button:only-child, headerbar .linked button:only-child:not(:only-child), .titlebar .linked button:only-child:not(:only-child), .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat { border-style: solid; border-radius: 9px; -gtk-outline-radius: 9px; }
+.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .xfce4-panel.background button menu .linked button:only-child, headerbar .linked button:only-child:not(:only-child), .titlebar .linked button:only-child:not(:only-child), .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat { border-style: solid; border-radius: 6px; }
 
 .xfce4-panel.background button menu .linked button, headerbar .linked.raised button:not(:only-child), headerbar .linked button:not(:only-child), headerbar > .stack-switcher.linked > button:not(:only-child), .titlebar .linked.raised button:not(:only-child), .titlebar .linked button:not(:only-child), .titlebar > .stack-switcher.linked > button:not(:only-child), .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .linked > button { border-left-color: alpha(currentColor,0.15); border-right-color: alpha(currentColor,0.15); }
 
-.linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > button { border-top-color: alpha(currentColor,0.15); border-bottom-color: alpha(currentColor,0.15); border-style: solid none none none; border-radius: 0; -gtk-outline-radius: 0; }
+.linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > button { border-radius: 0; }
 
-.linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child, .linked.vertical > button:first-child { border-top-color: transparent; border-top-left-radius: 9px; border-top-right-radius: 9px; -gtk-outline-top-left-radius: 9px; -gtk-outline-top-right-radius: 9px; }
+.linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child, .linked.vertical > button:first-child { border-top-color: transparent; border-top-left-radius: 6px; border-top-right-radius: 6px; }
 
-.linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child, .linked.vertical > button:last-child { border-bottom-color: transparent; border-bottom-style: solid; border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; -gtk-outline-bottom-left-radius: 9px; -gtk-outline-bottom-right-radius: 9px; }
+.linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child, .linked.vertical > button:last-child { border-bottom-color: transparent; border-bottom-style: solid; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
 
-.linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child, .linked.vertical > button:only-child { border-style: solid; border-radius: 9px; -gtk-outline-radius: 9px; }
+.linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child, .linked.vertical > button:only-child { border-style: solid; border-radius: 6px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > button { border-top-color: alpha(currentColor,0.15); border-bottom-color: alpha(currentColor,0.15); }
 
