@@ -12,5 +12,8 @@ If you do decide to use it you are expected to:
 
 # ${{\color{#ff4043}\textbf{THIS IS A WORK IN PROGRESS, IN MANY PARTS IT WILL NOT BE FINISHED!}}}\$
 ## todo
-- [ ] finish gtk3 version
+- [x] finish gtk3 version (kinda done)
 - [ ] make gtk4 adaptation
+
+## want to contribute? 
+no.
