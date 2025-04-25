@@ -278,10 +278,5 @@ menu menuitem, .menu menuitem{background-color:transparent; color:@window_fg_nor
 menu menuitem:hover, .menu menuitem:hover{background-color:alpha(@window_decoration_focus,0.2); border:1px solid @window_decoration_focus;}
 menu separator, .menu spearator{margin:5px;}
 
-/* toow-ip .... mha */
-tooltip decoration{border-radius:6px; background:none; border:none;}
-tooltip{background-color:@tooltip_bg_normal; color:@tooltip_fg_normal; border:1px solid mix(@tooltip_bg_normal,@tooltip_fg_normal,0.2);}
-tooltip *{color:@tooltip_fg_normal;}
-
 /* extwa */
 colorswatch.activatable{margin:0px; padding:2; border-radius:6; border:none; margin-right:-1px; margin-left:-3px;}
