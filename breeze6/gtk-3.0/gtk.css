@@ -116,116 +116,116 @@
 *   CUSTOM COLORS   *
 ********************/
 /* colors:button */
-@define-color button_bg_normal #2a2835;
-@define-color button_bg_alt #292735;
-@define-color button_decoration_focus #949ef9;
-@define-color button_decoration_hover #50526a;
-@define-color button_fg_active #7c62ff;
-@define-color button_fg_inactive #d0d0d0;
-@define-color button_fg_link #a2a7ff;
-@define-color button_fg_negative #e76565;
-@define-color button_fg_neutral #f1ba4b;
-@define-color button_fg_normal #e9f1ff;
-@define-color button_fg_positive #86da67;
-@define-color button_fg_link_visited #7f66ff;
+@define-color button_bg_normal #fbc2cf;
+@define-color button_bg_alt #fda9b4;
+@define-color button_decoration_focus #f55f8f;
+@define-color button_decoration_hover #ffb9d5;
+@define-color button_fg_active #1e6a3d;
+@define-color button_fg_inactive #7e2245;
+@define-color button_fg_link #fd66a0;
+@define-color button_fg_negative #a10003;
+@define-color button_fg_neutral #a56c09;
+@define-color button_fg_normal #383433;
+@define-color button_fg_positive #28622e;
+@define-color button_fg_link_visited #a683ff;
 
 /* colors:complementary */
-@define-color comp_bg_normal #151515;
-@define-color comp_bg_alt #000000;
-@define-color comp_decoration_focus #949ef9;
-@define-color comp_decoration_hover #50526a;
-@define-color comp_fg_active #7c62ff;
-@define-color comp_fg_inactive #d0d0d0;
-@define-color comp_fg_link #a2a7ff;
-@define-color comp_fg_negative #e76565;
-@define-color comp_fg_neutral #f1ba4b;
+@define-color comp_bg_normal #31363b;
+@define-color comp_bg_alt #3b4045;
+@define-color comp_decoration_focus #f55f8f;
+@define-color comp_decoration_hover #ffb9d5;
+@define-color comp_fg_active #1e6a3d;
+@define-color comp_fg_inactive #7e2245;
+@define-color comp_fg_link #fd66a0;
+@define-color comp_fg_negative #a10003;
+@define-color comp_fg_neutral #a56c09;
 @define-color comp_fg_normal #eff0f1;
-@define-color comp_fg_positive #86da67;
-@define-color comp_fg_link_visited #7f66ff;
+@define-color comp_fg_positive #28622e;
+@define-color comp_fg_link_visited #a683ff;
 
 /* colors:header */
-@define-color header_bg_normal #201e28;
-@define-color header_bg_alt #201e28;
-@define-color header_decoration_focus #949ef9;
-@define-color header_decoration_hover #50526a;
-@define-color header_fg_active #7c62ff;
-@define-color header_fg_inactive #d0d0d0;
-@define-color header_fg_link #a2a7ff;
-@define-color header_fg_negative #e76565;
-@define-color header_fg_neutral #f1ba4b;
-@define-color header_fg_normal #dee7ff;
-@define-color header_fg_positive #86da67;
-@define-color header_fg_link_visited #7f66ff;
+@define-color header_bg_normal #ffd4de;
+@define-color header_bg_alt #ffcddb;
+@define-color header_decoration_focus #f55f8f;
+@define-color header_decoration_hover #ffb9d5;
+@define-color header_fg_active #1e6a3d;
+@define-color header_fg_inactive #7e2245;
+@define-color header_fg_link #fd66a0;
+@define-color header_fg_negative #a10003;
+@define-color header_fg_neutral #a56c09;
+@define-color header_fg_normal #443f3e;
+@define-color header_fg_positive #28622e;
+@define-color header_fg_link_visited #a683ff;
 
 /* colors:header [inactive] */
-@define-color header_inactive_bg_normal #201e28;
-@define-color header_inactive_bg_alt #201e28;
-@define-color header_inactive_decoration_focus #949ef9;
-@define-color header_inactive_decoration_hover #50526a;
-@define-color header_inactive_fg_active #7c62ff;
-@define-color header_inactive_fg_inactive #d0d0d0;
-@define-color header_inactive_fg_link #a2a7ff;
-@define-color header_inactive_fg_negative #e76565;
-@define-color header_inactive_fg_neutral #f1ba4b;
-@define-color header_inactive_fg_normal #dee7ff;
-@define-color header_inactive_fg_positive #86da67;
-@define-color header_inactive_fg_link_visited #7f66ff;
+@define-color header_inactive_bg_normal #ffd4de;
+@define-color header_inactive_bg_alt #ffcddb;
+@define-color header_inactive_decoration_focus #f55f8f;
+@define-color header_inactive_decoration_hover #ffb9d5;
+@define-color header_inactive_fg_active #1e6a3d;
+@define-color header_inactive_fg_inactive #7e2245;
+@define-color header_inactive_fg_link #fd66a0;
+@define-color header_inactive_fg_negative #a10003;
+@define-color header_inactive_fg_neutral #a56c09;
+@define-color header_inactive_fg_normal #443f3e;
+@define-color header_inactive_fg_positive #28622e;
+@define-color header_inactive_fg_link_visited #a683ff;
 
 /* colors:selection */
-@define-color selection_bg_normal #949df3;
-@define-color selection_bg_alt #949cf2;
-@define-color selection_decoration_focus #949ef9;
-@define-color selection_decoration_hover #50526a;
+@define-color selection_bg_normal #c11f5a;
+@define-color selection_bg_alt #737373;
+@define-color selection_decoration_focus #f55f8f;
+@define-color selection_decoration_hover #ffb9d5;
 @define-color selection_fg_active #fcfcfc;
-@define-color selection_fg_inactive #d0d0d0;
-@define-color selection_fg_link #a2a7ff;
-@define-color selection_fg_negative #e76565;
-@define-color selection_fg_neutral #f1ba4b;
+@define-color selection_fg_inactive #7e2245;
+@define-color selection_fg_link #fd66a0;
+@define-color selection_fg_negative #a10003;
+@define-color selection_fg_neutral #a56c09;
 @define-color selection_fg_normal #ffffff;
-@define-color selection_fg_positive #86da67;
-@define-color selection_fg_link_visited #7f66ff;
+@define-color selection_fg_positive #28622e;
+@define-color selection_fg_link_visited #a683ff;
 
 /* colors:tooltip */
-@define-color tooltip_bg_normal #000000;
-@define-color tooltip_bg_alt #222222;
-@define-color tooltip_decoration_focus #949ef9;
-@define-color tooltip_decoration_hover #50526a;
-@define-color tooltip_fg_active #7c62ff;
-@define-color tooltip_fg_inactive #d0d0d0;
-@define-color tooltip_fg_link #a2a7ff;
-@define-color tooltip_fg_negative #e76565;
-@define-color tooltip_fg_neutral #f1ba4b;
-@define-color tooltip_fg_normal #edf0ff;
-@define-color tooltip_fg_positive #86da67;
-@define-color tooltip_fg_link_visited #7f66ff;
+@define-color tooltip_bg_normal #421828;
+@define-color tooltip_bg_alt #000000;
+@define-color tooltip_decoration_focus #f55f8f;
+@define-color tooltip_decoration_hover #ffb9d5;
+@define-color tooltip_fg_active #1e6a3d;
+@define-color tooltip_fg_inactive #7e2245;
+@define-color tooltip_fg_link #fd66a0;
+@define-color tooltip_fg_negative #a10003;
+@define-color tooltip_fg_neutral #a56c09;
+@define-color tooltip_fg_normal #ffbbca;
+@define-color tooltip_fg_positive #28622e;
+@define-color tooltip_fg_link_visited #a683ff;
 
 /* colors:view */
-@define-color view_bg_normal #201e28;
-@define-color view_bg_alt #201e28;
-@define-color view_decoration_focus #949ef9;
-@define-color view_decoration_hover #50526a;
-@define-color view_fg_active #7c62ff;
-@define-color view_fg_inactive #d0d0d0;
-@define-color view_fg_link #a2a7ff;
-@define-color view_fg_negative #e76565;
-@define-color view_fg_neutral #f1ba4b;
-@define-color view_fg_normal #cdd3de;
-@define-color view_fg_positive #86da67;
-@define-color view_fg_link_visited #7f66ff;
+@define-color view_bg_normal #ffeaf1;
+@define-color view_bg_alt #ffebf3;
+@define-color view_decoration_focus #f55f8f;
+@define-color view_decoration_hover #ffb9d5;
+@define-color view_fg_active #1e6a3d;
+@define-color view_fg_inactive #7e2245;
+@define-color view_fg_link #fd66a0;
+@define-color view_fg_negative #a10003;
+@define-color view_fg_neutral #a56c09;
+@define-color view_fg_normal #443f3e;
+@define-color view_fg_positive #28622e;
+@define-color view_fg_link_visited #a683ff;
 
 /* colors:window */
-@define-color window_bg_normal #24222d;
-@define-color window_bg_alt #24222d;
-@define-color window_decoration_focus #949ef9;
-@define-color window_decoration_hover #50526a;
-@define-color window_fg_active #7c62ff;
-@define-color window_fg_inactive #d0d0d0;
-@define-color window_fg_link #a2a7ff;
-@define-color window_fg_negative #e76565;
-@define-color window_fg_neutral #f1ba4b;
-@define-color window_fg_normal #eef6ff;
-@define-color window_fg_positive #86da67;
-@define-color window_fg_link_visited #7f66ff;
+@define-color window_bg_normal #ffd4de;
+@define-color window_bg_alt #ffcddb;
+@define-color window_decoration_focus #f55f8f;
+@define-color window_decoration_hover #ffb9d5;
+@define-color window_fg_active #1e6a3d;
+@define-color window_fg_inactive #7e2245;
+@define-color window_fg_link #fd66a0;
+@define-color window_fg_negative #a10003;
+@define-color window_fg_neutral #a56c09;
+@define-color window_fg_normal #443f3e;
+@define-color window_fg_positive #28622e;
+@define-color window_fg_link_visited #a683ff;
 
 /* aaaaaaaiiiiiiiiiiiiiii */
 * {
@@ -277,6 +277,7 @@ button.flat:disabled, headerbar button.disabled{background-color:transparent; co
 button:hover, button.flat:hover{border:1px solid @selection_bg_normal; transition:none;}
 button:hover:active, button.flat:hover:active{border:1px solid @selection_bg_normal; transition:none; background-color:alpha(@selection_bg_normal,0.2);}
 button:checked, button.flat:checked{color:@button_fg_normal; background-color:alpha(currentcolor,0.1); border:1px solid alpha(currentcolor,0.3);}
+button:checked:hover{border-color:@selection_bg_normal;}
 button.circular{border-radius:999px;}
 button.suggested-action{background-color:alpha(@selection_bg_normal,0.1); border:1px solid alpha(@selection_bg_normal,0.6);}
 button.suggested-action:hover{border-color:@selection_bg_normal;}
@@ -310,7 +311,7 @@ treeview.view header button:hover{background-color:alpha(@button_decoration_hove
 
 combobox arrow{-gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); min-height:14px; min-width:14px; border:none; padding-right:5px;}
 
-entry{background-color:@view_bg_normal; color:@view_fg_noramal; border-radius: 6px; border:1px solid alpha(@view_fg_normal,0.2); min-height:25px; min-width:30px; padding:3px; padding-left:6px;}
+entry{background-color:@view_bg_normal; color:@view_fg_normal; border-radius: 6px; border:1px solid alpha(@view_fg_normal,0.2); min-height:25px; min-width:30px; padding:3px; padding-left:6px;}
 entry:focus{border:1px solid @selection_bg_normal;}
 entry image{padding-left:5px; padding-right:5px;}
 
@@ -353,8 +354,8 @@ switch image, switch:disabled image{color: transparent;}
 
 .activatable{min-height:30px; background-color:transparent; color:@view_fg_normal; margin:6px; margin-bottom:3px; margin-top:3px; border:1px solid rgba(0,0,0,0); border-radius:6px;}
 .activatable:hover{background-color:alpha(@selection_bg_normal,0.3); border-color:@selection_bg_normal;}
-.activatable:hover:active{background-color:@selection_bg_normal; border-color:@selection_bg_normal;}
-.activatable:selected{background-color:@selection_bg_normal; border-color:@selection_bg_normal;}
+.activatable:hover:active{background-color:@selection_bg_normal; border-color:@selection_bg_normal; color:@selection_fg_normal}
+.activatable:selected{background-color:@selection_bg_normal; border-color:@selection_bg_normal; color:@selection_fg_normal}
 .sidebar-icon{padding-left:6px; padding-right:6px;}
 
 /* pwogwwess bawwwwww / wewel bawwwwww */
