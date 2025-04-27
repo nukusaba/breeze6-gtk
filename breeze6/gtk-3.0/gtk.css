@@ -227,7 +227,7 @@
 @define-color window_fg_positive #28622e;
 @define-color window_fg_link_visited #a683ff;
 
-/* aaaaaaaiiiiiiiiiiiiiii */
+/* NYAAAAAAAAAAA */
 * {
   padding: 0;
   -GtkToolButton-icon-spacing: 4;
@@ -276,7 +276,7 @@ button:disabled{background-color:alpha(@button_bg_normal,0.8); color:alpha(@butt
 button.flat:disabled, headerbar button.disabled{background-color:transparent; color:alpha(@button_fg_normal,0.5);}
 button:hover, button.flat:hover{border:1px solid @selection_bg_normal; transition:none;}
 button:hover:active, button.flat:hover:active{border:1px solid @selection_bg_normal; transition:none; background-color:alpha(@selection_bg_normal,0.2);}
-button:checked, button.flat:checked{color:@button_fg_normal; background-color:alpha(currentcolor,0.1); border:1px solid alpha(currentcolor,0.3);}
+button:checked, button.flat:checked{color:@button_fg_normal; background-color:alpha(currentcolor,0.3); border:1px solid alpha(currentcolor,0.325);}
 button:checked:hover{border-color:@selection_bg_normal;}
 button.circular{border-radius:999px;}
 button.suggested-action{background-color:alpha(@selection_bg_normal,0.1); border:1px solid alpha(@selection_bg_normal,0.6);}
@@ -304,7 +304,7 @@ spinbutton.vertical entry{border-radius:0; border-top:none; border-bottom:none;}
 headerbar .linked button{background-color:@button_bg_normal; border-color:alpha(@button_fg_normal,0.2);}
 headerbar .linked button:hover{border-color:alpha(@selection_bg_normal,1);}
 headerbar .linked button:hover:active{background-color:alpha(@selection_bg_normal,0.2); border-color:@selection_bg_normal;}
-headerbar .linked button:checked{color:@button_fg_normal; background-color:alpha(@button_fg_normal,0.1); border:1px solid alpha(@button_fg_normal,0.2);}
+headerbar .linked button:checked{color:@button_fg_normal; background-color:alpha(@button_fg_normal,0.15); border:1px solid alpha(@button_fg_normal,0.2);}
 
 treeview.view header button{border-radius:0px; background-color:@button_bg_normal; color:@button_fg_normal; border:none; box-shadow:0 0 0 1px mix(@button_bg_normal,@button_fg_normal,0.2);}
 treeview.view header button:hover{background-color:alpha(@button_decoration_hover,0.3);}
@@ -327,7 +327,7 @@ tab:checked label{border-color:@window_decoration_focus;}
 scrollbar{background-color:transparent; padding:4px;}
 scrollbar button{min-width:0; min-height:0; padding:0; margin:0; background:none; color:transparent; border:none;}
 scrollbar slider{background-color:alpha(@window_decoration_focus,0.4); border:1px solid rgba(0,0,0,0); transition:0.25s ease all; min-width:6px; min-height:6px; border-radius:999px; padding:0; margin:0;}
-scrollbar slider:hover{background-color:alpha(@window_decoration_hover,0.6);}
+scrollbar slider:hover, scrollbar slider:hover:active{background-color:alpha(@window_decoration_hover,0.6); border-color:transparent;}
 scrollbar slider:backdrop{background-color:alpha(@window_fg_normal,0.1); border-color:alpha(@window_fg_normal,0.2);}
 
 checkbutton{margin-left:4px; margin-right:4px; padding-top:3px; padding-bottom:3px;}
@@ -353,7 +353,7 @@ switch slider{margin: -5px; background-color:@button_bg_normal; border:1px solid
 switch image, switch:disabled image{color: transparent;}
 
 .activatable{min-height:30px; background-color:transparent; color:@view_fg_normal; margin:6px; margin-bottom:3px; margin-top:3px; border:1px solid rgba(0,0,0,0); border-radius:6px;}
-.activatable:hover{background-color:alpha(@selection_bg_normal,0.3); border-color:@selection_bg_normal;}
+.activatable:hover{background-color:alpha(@window_decoration_hover,0.3); border-color:@window_decoration_hover;}
 .activatable:hover:active{background-color:@selection_bg_normal; border-color:@selection_bg_normal; color:@selection_fg_normal}
 .activatable:selected{background-color:@selection_bg_normal; border-color:@selection_bg_normal; color:@selection_fg_normal}
 .sidebar-icon{padding-left:6px; padding-right:6px;}
