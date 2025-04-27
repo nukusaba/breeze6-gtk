@@ -116,13 +116,13 @@
  *   CUSTOM COLORS   *
  ********************/
 /* colors:button */
-@define-color button_bg_normal #2a2835;
-@define-color button_bg_alt #292735;
-@define-color button_decoration_focus #a72125;
-@define-color button_decoration_hover #50526a;
+@define-color button_bg_normal #1f1f21;
+@define-color button_bg_alt #1f1f21;
+@define-color button_decoration_focus #dc3344;
+@define-color button_decoration_hover #4f4f54;
 @define-color button_fg_active #7c62ff;
 @define-color button_fg_inactive #d0d0d0;
-@define-color button_fg_link #e22c32;
+@define-color button_fg_link #ff3b52;
 @define-color button_fg_negative #e76565;
 @define-color button_fg_neutral #f1ba4b;
 @define-color button_fg_normal #e9f1ff;
@@ -132,11 +132,11 @@
 /* colors:complementary */
 @define-color comp_bg_normal #151515;
 @define-color comp_bg_alt #000000;
-@define-color comp_decoration_focus #a72125;
-@define-color comp_decoration_hover #50526a;
+@define-color comp_decoration_focus #dc3344;
+@define-color comp_decoration_hover #4f4f54;
 @define-color comp_fg_active #7c62ff;
 @define-color comp_fg_inactive #d0d0d0;
-@define-color comp_fg_link #e22c32;
+@define-color comp_fg_link #ff3b52;
 @define-color comp_fg_negative #e76565;
 @define-color comp_fg_neutral #f1ba4b;
 @define-color comp_fg_normal #eff0f1;
@@ -144,13 +144,13 @@
 @define-color comp_fg_link_visited #7f66ff;
 
 /* colors:header */
-@define-color header_bg_normal #201e28;
-@define-color header_bg_alt #201e28;
-@define-color header_decoration_focus #a72125;
-@define-color header_decoration_hover #50526a;
+@define-color header_bg_normal #171719;
+@define-color header_bg_alt #1e1e20;
+@define-color header_decoration_focus #dc3344;
+@define-color header_decoration_hover #4f4f54;
 @define-color header_fg_active #7c62ff;
 @define-color header_fg_inactive #d0d0d0;
-@define-color header_fg_link #e22c32;
+@define-color header_fg_link #ff3b52;
 @define-color header_fg_negative #e76565;
 @define-color header_fg_neutral #f1ba4b;
 @define-color header_fg_normal #dee7ff;
@@ -158,13 +158,13 @@
 @define-color header_fg_link_visited #7f66ff;
 
 /* colors:header [inactive] */
-@define-color header_inactive_bg_normal #201e28;
-@define-color header_inactive_bg_alt #201e28;
-@define-color header_inactive_decoration_focus #a72125;
-@define-color header_inactive_decoration_hover #50526a;
+@define-color header_inactive_bg_normal #171719;
+@define-color header_inactive_bg_alt #1e1e20;
+@define-color header_inactive_decoration_focus #dc3344;
+@define-color header_inactive_decoration_hover #4f4f54;
 @define-color header_inactive_fg_active #7c62ff;
 @define-color header_inactive_fg_inactive #d0d0d0;
-@define-color header_inactive_fg_link #e22c32;
+@define-color header_inactive_fg_link #ff3b52;
 @define-color header_inactive_fg_negative #e76565;
 @define-color header_inactive_fg_neutral #f1ba4b;
 @define-color header_inactive_fg_normal #dee7ff;
@@ -172,13 +172,13 @@
 @define-color header_inactive_fg_link_visited #7f66ff;
 
 /* colors:selection */
-@define-color selection_bg_normal #a72125;
-@define-color selection_bg_alt #a72125;
-@define-color selection_decoration_focus #a72125;
-@define-color selection_decoration_hover #50526a;
+@define-color selection_bg_normal #dc3344;
+@define-color selection_bg_alt #cc4a57;
+@define-color selection_decoration_focus #dc3344;
+@define-color selection_decoration_hover #4f4f54;
 @define-color selection_fg_active #fcfcfc;
 @define-color selection_fg_inactive #d0d0d0;
-@define-color selection_fg_link #e22c32;
+@define-color selection_fg_link #ff3b52;
 @define-color selection_fg_negative #e76565;
 @define-color selection_fg_neutral #f1ba4b;
 @define-color selection_fg_normal #ffffff;
@@ -186,27 +186,27 @@
 @define-color selection_fg_link_visited #7f66ff;
 
 /* colors:tooltip */
-@define-color tooltip_bg_normal #000000;
-@define-color tooltip_bg_alt #222222;
-@define-color tooltip_decoration_focus #a72125;
-@define-color tooltip_decoration_hover #50526a;
+@define-color tooltip_bg_normal #cb2f41;
+@define-color tooltip_bg_alt #ab2839;
+@define-color tooltip_decoration_focus #dc3344;
+@define-color tooltip_decoration_hover #4f4f54;
 @define-color tooltip_fg_active #7c62ff;
 @define-color tooltip_fg_inactive #d0d0d0;
-@define-color tooltip_fg_link #e22c32;
+@define-color tooltip_fg_link #ff3b52;
 @define-color tooltip_fg_negative #e76565;
 @define-color tooltip_fg_neutral #f1ba4b;
-@define-color tooltip_fg_normal #edf0ff;
+@define-color tooltip_fg_normal #ffffff;
 @define-color tooltip_fg_positive #86da67;
 @define-color tooltip_fg_link_visited #7f66ff;
 
 /* colors:view */
-@define-color view_bg_normal #201e28;
-@define-color view_bg_alt #201e28;
-@define-color view_decoration_focus #a72125;
-@define-color view_decoration_hover #50526a;
+@define-color view_bg_normal #18181a;
+@define-color view_bg_alt #19191b;
+@define-color view_decoration_focus #dc3344;
+@define-color view_decoration_hover #4f4f54;
 @define-color view_fg_active #7c62ff;
 @define-color view_fg_inactive #d0d0d0;
-@define-color view_fg_link #e22c32;
+@define-color view_fg_link #ff3b52;
 @define-color view_fg_negative #e76565;
 @define-color view_fg_neutral #f1ba4b;
 @define-color view_fg_normal #cdd3de;
@@ -214,13 +214,13 @@
 @define-color view_fg_link_visited #7f66ff;
 
 /* colors:window */
-@define-color window_bg_normal #24222d;
-@define-color window_bg_alt #24222d;
-@define-color window_decoration_focus #a72125;
-@define-color window_decoration_hover #50526a;
+@define-color window_bg_normal #1f1f21;
+@define-color window_bg_alt #1e1e20;
+@define-color window_decoration_focus #dc3344;
+@define-color window_decoration_hover #4f4f54;
 @define-color window_fg_active #7c62ff;
 @define-color window_fg_inactive #d0d0d0;
-@define-color window_fg_link #e22c32;
+@define-color window_fg_link #ff3b52;
 @define-color window_fg_negative #e76565;
 @define-color window_fg_neutral #f1ba4b;
 @define-color window_fg_normal #eef6ff;
@@ -344,12 +344,12 @@ radio:checked{background-color:alpha(@selection_bg_normal,0.2); color:@button_fg
 radio:checked:hover{border-color:@selection_bg_normal;}
 radio:disabled{background-color:alpha(@button_bg_normal,0.8); border-color:alpha(@button_fg_normal,0.1);}
 
-switch{padding: 0px; border-radius: 999px; color: @button_fg_normal; background-color: @button_bg_normal; border:1px solid alpha(@button_fg_normal,0.2); min-width:35px;}
+switch{padding: 0px; border-radius: 999px; color: @button_fg_normal; background-color: @button_bg_normal; border:1px solid alpha(@button_fg_normal,0.2); min-width:45px; margin-top:20px; margin-bottom:20px;}
 switch:checked{color:@button_fg_normal; background-color: alpha(@selection_bg_normal,0.3); border-color:@selection_bg_normal;}
 switch:checked slider{border-color:@selection_bg_normal;}
 switch:checked:disabled{background-color:alpha(@selection_bg_normal,0.1); border-color:alpha(@selection_bg_normal,0.6);}
 switch:disabled{border-color:alpha(@button_fg_normal,0.1); background-color:alpha(@button_bg_normal,0.8);}
-switch slider{margin: -5px; background-color:@button_bg_normal; border:1px solid mix(@button_bg_normal,@button_fg_normal,0.2);}
+switch slider{margin:-4px; margin-left:-1.5px; margin-right:-1.5px; background-color:@button_bg_normal; border:1px solid mix(@button_bg_normal,@button_fg_normal,0.2);}
 switch image, switch:disabled image{color: transparent;}
 
 .activatable{min-height:30px; background-color:transparent; color:@view_fg_normal; margin:6px; margin-bottom:3px; margin-top:3px; border:1px solid rgba(0,0,0,0); border-radius:6px;}

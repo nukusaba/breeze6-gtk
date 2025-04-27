@@ -344,12 +344,12 @@ radio:checked{background-color:alpha(@selection_bg_normal,0.2); color:@button_fg
 radio:checked:hover{border-color:@selection_bg_normal;}
 radio:disabled{background-color:alpha(@button_bg_normal,0.8); border-color:alpha(@button_fg_normal,0.1);}
 
-switch{padding: 0px; border-radius: 999px; color: @button_fg_normal; background-color: @button_bg_normal; border:1px solid alpha(@button_fg_normal,0.2); min-width:35px;}
+switch{padding: 0px; border-radius: 999px; color: @button_fg_normal; background-color: @button_bg_normal; border:1px solid alpha(@button_fg_normal,0.2); min-width:45px; margin-top:20px; margin-bottom:20px;}
 switch:checked{color:@button_fg_normal; background-color: alpha(@selection_bg_normal,0.3); border-color:@selection_bg_normal;}
 switch:checked slider{border-color:@selection_bg_normal;}
 switch:checked:disabled{background-color:alpha(@selection_bg_normal,0.1); border-color:alpha(@selection_bg_normal,0.6);}
 switch:disabled{border-color:alpha(@button_fg_normal,0.1); background-color:alpha(@button_bg_normal,0.8);}
-switch slider{margin: -5px; background-color:@button_bg_normal; border:1px solid mix(@button_bg_normal,@button_fg_normal,0.2);}
+switch slider{margin:-4px; margin-left:-1.5px; margin-right:-1.5px; background-color:@button_bg_normal; border:1px solid mix(@button_bg_normal,@button_fg_normal,0.2);}
 switch image, switch:disabled image{color: transparent;}
 
 .activatable{min-height:30px; background-color:transparent; color:@view_fg_normal; margin:6px; margin-bottom:3px; margin-top:3px; border:1px solid rgba(0,0,0,0); border-radius:6px;}
