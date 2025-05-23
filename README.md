@@ -1,4 +1,4 @@
-# BBbreeze GTK
+# Breeze6 GTK
 A new GTK theme to mimic the Breeze Qt style used by KDE.
 
 **Why?** <br>

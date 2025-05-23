@@ -1,6 +1,6 @@
 [X-GNOME-Metatheme]
-Name=BBbreeze
+Name=Breeze6-GTK
 Type=X-GNOME-Metatheme
-Comment=BBbreeze theme
+Comment=Breeze6-GTK theme
 Encoding=UTF-8
-GtkTheme=BBbreeze
+GtkTheme=Breeze6-GTK

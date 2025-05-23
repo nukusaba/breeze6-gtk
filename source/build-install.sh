@@ -7,7 +7,7 @@ else
   exit 1
 fi
 
-theme_name="BBbreeze"
+theme_name="Breeze6-GTK"
 
 # libadwaita
 if [ "$1" == "--libadwaita" ]; then
