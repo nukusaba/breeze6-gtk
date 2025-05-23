@@ -1,5 +1,33 @@
 @use "../colors/colors.scss" as *;
 
+// reset stuff
+* {
+  padding: 0;
+  box-shadow: none;
+  min-height: 0;
+  transition: none;
+  animation: none;
+}
+
+// view
+.view, .view:hover {
+  background-color: $view_bg_normal
+}
+
+// headerbar
+headerbar{
+  border-radius: 0;
+
+  &:first-child {
+    border-radius: 0;
+    border-top-left-radius: 6px;
+  }
+  &:last-child {
+    border-radius: 0;
+    border-top-right-radius: 6px;
+  }
+}
+
 notebook > header {
   background-color: $window_bg_normal;
 }
