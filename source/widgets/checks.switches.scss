@@ -1,0 +1,140 @@
+@use "../colors/colors.scss" as *;
+
+
+// switch.
+// converted from official breeze theme cuz i was too dumb to do this myself, bit messy.
+switch {
+  margin: 2px;
+  font-weight: bold;
+  font-size: smaller;
+  border: 1px solid;
+  border-radius: 12px;
+  color: transparent;
+  background-color: rgba($button_fg_normal,0.05);
+  border-color: rgba($button_fg_normal,0.222);
+  text-shadow: none;
+}
+switch:disabled {
+  background-color: rgba($button_fg_normal,0.03);
+}
+switch:checked {
+  background: rgba($selection_bg_normal, 0.333);
+  border-color: $selection_bg_normal;
+}
+switch:checked:disabled,
+label:disabled selection:checked {
+  background: rgba($selection_bg_normal, 0.222);
+  border-color: rgba($selection_bg_normal, 0.777);
+}
+switch:dir(ltr):checked slider {
+  margin-left: 1px;
+}
+switch:dir(ltr):not(:checked) slider {
+  margin-right: 1px;
+}
+
+switch slider {
+  min-width: 24px;
+  min-height: 24px;
+  margin: -4px;
+  border: 1px solid;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.125);
+  border-color: rgba($button_fg_normal,0.2);
+  background: $button_bg_normal;
+}
+switch:hover slider {
+  border-color: $selection_bg_normal;
+}
+switch:focus slider {
+  border-color: $selection_bg_normal;
+}
+switch:disabled slider {
+  box-shadow: none;
+  color: rgba($button_fg_normal,0.5);
+  border-color: rgba($button_fg_normal,0.1);
+  background: rgba($button_bg_normal,0.6);
+}
+
+switch image,
+switch:disabled image {
+  color: transparent;
+}
+
+
+// checkbox
+// back to writing stuff myself YAY
+check {
+  border: 1px solid rgba($button_fg_normal,0.2);
+  background-color: $button_bg_normal;
+  border-radius: 6px;
+  margin: 3px;
+  color: transparent;
+
+  &:hover,
+  &:checked:hover {
+    border-color: $selection_bg_normal;
+  }
+  &:hover:active {
+    border-color: $selection_bg_normal;
+    background-color: rgba($selection_bg_normal,0.3);
+  }
+  &:checked {
+    border-color: rgba($selection_bg_normal,0.5);
+    background-color: rgba($selection_bg_normal,0.3);
+    color: $button_fg_normal;
+    -gtk-icon-source:image(-gtk-recolor(url("assets/checkmark-symbolic.svg")));
+  }
+  &:indeterminate {
+    -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")));
+    border-color: rgba($selection_bg_normal,0.5);
+    background-color: rgba($selection_bg_normal,0.3);
+    color: $button_fg_normal;
+  }
+
+  &:disabled {
+    background-color: rgba($button_bg_normal,0.5);
+    color: transparent;
+    border-color: rgba($button_fg_normal,0.1);
+  }
+  &:disabled:checked {
+    background-color: rgba($selection_bg_normal,0.2);
+    border-color: rgba($selection_bg_normal,0.4);
+    color: rgba($button_fg_normal,0.7);
+  }
+}
+
+// Radio
+radio {
+  border: 1px solid rgba($button_fg_normal,0.2);
+  background-color: $button_bg_normal;
+  border-radius: 999px;
+  margin: 3px;
+  color: transparent;
+
+  &:hover,
+  &:checked:hover {
+    border-color: $selection_bg_normal;
+  }
+  &:hover:active {
+    border-color: $selection_bg_normal;
+    background-color: rgba($selection_bg_normal,0.3);
+  }
+  &:checked {
+    border-color: rgba($selection_bg_normal,0.5);
+    background-color: rgba($selection_bg_normal,0.3);
+    color: $button_fg_normal;
+    -gtk-icon-source:image(-gtk-recolor(url("assets/bullet-symbolic.svg")));
+  }
+
+  &:disabled {
+    background-color: rgba($button_bg_normal,0.5);
+    color: transparent;
+    border-color: rgba($button_fg_normal,0.1);
+  }
+  &:disabled:checked {
+    background-color: rgba($selection_bg_normal,0.2);
+    border-color: rgba($selection_bg_normal,0.4);
+    color: rgba($button_fg_normal,0.7);
+  }
+}

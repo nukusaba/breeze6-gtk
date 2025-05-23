@@ -1,0 +1,67 @@
+@use "../colors/colors.scss" as *;
+
+// decoration
+decoration,
+window.background.csd.unified {
+  background-color: $window_bg_normal;
+  border-radius: 6px 6px 0 0;
+  box-shadow:
+    0 0 0 1px rgba($window_fg_normal,0.4),
+    0 0 40px rgba($breeze_shade,0.4);
+  margin: 10px;
+}
+.popup decoration,
+tooltip decoration {
+  background: none;
+  box-shadow: none;
+  border-radius: 6px;
+}
+
+
+// pretty much all background stuff, im too lazy to make individual files for them.
+
+// base background
+.background {
+  background-color: $window_bg_normal;
+  color: $window_fg_normal;
+}
+
+// frame
+// why is there two?
+frame,
+.frame {
+  background-color: mix($view_bg_normal,$window_bg_normal,50%);
+  border: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
+
+    & frame,
+    & .frame {
+      border: none;
+    }
+
+    .sidebar & {
+      background: none;
+      border: none;
+    }
+}
+
+// sidebar
+.sidebar {
+  background-color: $view_bg_normal;
+  color: $view_fg_normal;
+  border-right: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
+}
+
+// section frames, because frames wherent enough again
+frame border {
+  border: 1px solid rgba($view_fg_normal,0.2);
+
+  & > label {
+    color: rgba($view_fg_normal,0.8);
+  }
+}
+
+// toolbars
+actionbar,
+.primary-toolbar {
+  padding: 5px;
+}

@@ -1,0 +1,80 @@
+@use "../colors/colors.scss" as *;
+
+// copied from old version, and fixed up a bit.
+
+
+// scale
+scale {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+// levelbar
+levelbar trough block {
+  min-height: 6px;
+  min-width: 6px;
+  border-radius: 6px;
+}
+levelbar trough block.empty {
+  background-color: $button_bg_normal;
+  border: 1px solid rgba($button_fg_normal, 0.2);
+}
+levelbar trough block.filled {
+  background-color: rgba($selection_bg_normal, 0.2);
+  border: 1px solid $selection_bg_normal;
+}
+
+// progressbar
+progressbar trough,
+scale fill,
+scale trough {
+  border-radius: 8px;
+  background-color: $button_bg_normal;
+  border: 1px solid rgba($button_fg_normal, 0.2);
+  min-width: 8px;
+  min-height: 8px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+progressbar trough:disabled,
+scale fill:disabled,
+scale trough:disabled {
+  background-color: rgba($button_bg_normal, 0.8);
+  border: 1px solid rgba($button_fg_normal, 0.1);
+}
+progressbar progress,
+scale highlight {
+  background-color: rgba($selection_bg_normal, 0.2);
+  border: 1px solid $selection_bg_normal;
+  border-radius: 6px;
+  margin: -1px;
+}
+progressbar progress:disabled,
+scale highlight:disabled {
+  background-color: rgba($selection_bg_normal, 0.1);
+  border: 1px solid rgba($selection_bg_normal, 0.6);
+}
+scale slider,
+progressbar slider {
+  background-color: $button_bg_normal;
+  border: 1px solid mix($button_bg_normal, $button_fg_normal, 80%);
+  min-height: 18px;
+  min-width: 18px;
+  margin: -12px;
+  border-radius: 999px;
+}
+scale slider:hover,
+progressbar slider:hover {
+  border-color: $selection_bg_normal;
+}
+scale slider:hover:active
+progressbar slider:hover:active {
+  border-color: $selection_bg_normal;
+  background-color: mix($button_bg_normal, $selection_bg_normal, 80%);
+}
+scale slider:disabled,
+progressbar slider:disabled {
+  background-color: mix($button_bg_normal, $view_bg_normal, 70%);
+  border: 1px solid mix($button_bg_normal, $button_fg_normal, 95%);
+}

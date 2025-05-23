@@ -1,0 +1,22 @@
+@use "../colors/colors.scss" as *;
+
+.view {
+  background-color: $view_bg_normal;
+  color: $view_fg_normal;
+
+  &:hover {
+    background-color: rgba($selection_bg_normal,0.3);
+    color: $view_fg_normal;
+  }
+  &:selected {
+    background-color: $selection_bg_normal;
+    color: $selection_fg_normal;
+  }
+}
+
+rubberband,
+.rubberband {
+  background-color: rgba($selection_bg_normal,0.3);
+  border: 1px solid mix(white,$selection_bg_normal,40%);
+  border-radius: 6px;
+}

@@ -1,0 +1,18 @@
+@use "../colors/colors.scss" as *;
+
+entry {
+  background-color: $view_bg_normal;
+  color: $view_fg_normal;
+  border: 1px solid rgba($view_fg_normal, 0.2);
+  padding: 7px;
+  border-radius: 6px;
+
+  &:focus {
+    border-color: $selection_bg_normal;
+  }
+
+  & image {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}

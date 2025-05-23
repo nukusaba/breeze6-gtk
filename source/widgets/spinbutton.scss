@@ -1,0 +1,36 @@
+@use "../colors/colors.scss" as *;
+
+spinbutton {
+  background-color: $view_bg_normal;
+  color: $view_fg_normal;
+  border: 1px solid rgba($view_fg_normal, 0.2);
+  padding: 7px;
+  border-radius: 6px;
+
+  &:focus {
+    border-color: $selection_bg_normal;
+  }
+
+  & button,
+  & entry {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  & button:hover,
+  & button:hover:active {
+    color: $window_decoration_hover;
+  }
+}
+
+// random shit for spinbutton alignment because inkscape needs to always do their own stuff. (might break stuff elsewhere)
+paned box > box > spinbutton {
+  padding: 0;
+  margin: 0;
+  margin-left: -5px;
+}
+paned box > box > scale {
+  padding: 0;
+  margin: 0;
+}

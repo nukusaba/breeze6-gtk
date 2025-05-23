@@ -1,0 +1,10 @@
+@use "../colors/colors.scss" as *;
+
+selection {
+  background-color: $selection_bg_normal;
+  color: $selection_fg_normal;
+
+  &:backdrop {
+    background-color: rgba($selection_bg_normal,0.3);
+  }
+}

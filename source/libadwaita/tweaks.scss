@@ -1,0 +1,6 @@
+@use "../colors/colors.scss" as *;
+
+notebook > header {
+  background-color: $window_bg_normal;
+}
+

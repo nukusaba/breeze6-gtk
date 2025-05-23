@@ -1,19 +1,29 @@
-# breeze6
-A work in progress gtk adaptation of the Breeze Qt style. Aiming for better accuracy than the existing breeze gtk theme.
+# BBbreeze GTK
+A new GTK theme to mimic the Breeze Qt style used by KDE.
 
-The theme was originly based on adw-gtk3 however i have completly restarted from scratch cuz its ***fun***. <br>
-im writing this directly into one file, no scss, because i personaly see it as a fun challenge, and im doing this entirly because its fun for me.
+**Why?** <br>
+The default Breeze GTK theme is kinda bad imo. <br>
+This is still very much a for-fun-first project, and will only be worked on when there is a need for me to do so.
 
-This is purly a "for fun when im bored" project, and it is never guaranteed to work, or be finished, as its only being tested on my device, and for my usecases.
+## Completion
+- [ ] GTK3 Theme.
+- [ ] GTK4 Theme. (unclear if this will be made)
+GTK3 is pretty much done and usable. GTK4 is completly broken still, will be worked on.
 
-If you do decide to use it you are expected to:
-1. Know how gtk themes work.
-2. Fix any issue yourself.
+## Installation
+### Dependencies
+- Dart Sass (pre v3.0.0)
 
-# ${{\color{#ff4043}\textbf{THIS IS A WORK IN PROGRESS, IN MANY PARTS IT WILL NOT BE FINISHED!}}}\$
-## todo
-- [x] finish gtk3 version (kinda done)
-- [ ] make gtk4 adaptation
-
-## want to contribute? 
-no.
+### Installation
+1. Choose/create the colorscheme you want from the colors.scss file located in `source/colors/colors.scss`
+  - Make sure to comment out colorschemes you dont want.
+  
+2. Install theme.
+Build the theme (no install).
+```
+./build.sh
+```
+Building the theme and installing it.
+```
+./build-install.sh
+```

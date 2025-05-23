@@ -1,0 +1,17 @@
+@use "../colors/colors.scss" as *;
+
+headerbar {
+  background-color: $header_bg_normal;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 3px;
+  box-shadow: 0 1px 0 mix($header_fg_normal,$header_bg_normal,10%);
+
+  &:backdrop {
+    background-color: $header_inactive_bg_normal;
+  }
+}
+// because GNOME was too dumb to make the headerbar in their gtk4 style gtk3 apps roundable, this needs to be done. FU GNOME
+.background.csd.unified headerbar {
+  background-color: transparent;
+}

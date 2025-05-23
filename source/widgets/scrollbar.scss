@@ -1,0 +1,28 @@
+@use "../colors/colors.scss" as *;
+
+scrollbar {
+  min-width: 7px;
+  min-height: 7px;
+  padding: 5px;
+  box-shadow: 0 0 0 1px rgba($window_fg_normal,0.2);
+
+  & button {
+    min-height: 0;
+    min-width: 0;
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  & slider {
+    min-width: 7px;
+    min-height: 7px;
+    background-color: rgba($button_fg_normal,0.2);
+    box-shadow: 0 0 0 1px rgba($button_fg_normal,0.3);
+    border-radius: 999px;
+  }
+  & slider:hover {
+    background-color: rgba($window_decoration_hover,0.6);
+    box-shadow: 0 0 0 1px mix($window_decoration_hover,$window_bg_normal,50%);
+  }
+}

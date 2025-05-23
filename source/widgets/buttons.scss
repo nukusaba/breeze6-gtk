@@ -1,0 +1,133 @@
+@use "../colors/colors.scss" as *;
+
+button {
+  background-color: $button_bg_normal;
+  color: $button_fg_normal;
+  border: 1px solid rgba($button_fg_normal, 0.2);
+  padding: 7px;
+  border-radius: 6px;
+
+  &.flat,
+  headerbar & {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  headerbar .linked & {
+    background-color: $button_bg_normal;
+    color: $button_fg_normal;
+    border-color: rgba($button_fg_normal, 0.2);
+  }
+  &.circular {
+    border-radius: 999px;
+  }
+
+  &:hover, &.flat:hover
+  &:checked:hover, &.flat:checked:hover,
+  headerbar .linked &:hover, headerbar .linked &:checked:hover {
+    border-color: $selection_bg_normal;
+  }
+  &:hover:active, &.flat:hover:active,
+  headerbar .linked &:hover:active {
+    border-color: $selection_bg_normal;
+    background-color: rgba($selection_bg_normal,0.3);
+  }
+  &:checked, &.flat:checked,
+  headerbar .linked &:checked {
+    background-color: rgba($button_fg_normal,0.15);
+    border-color: rgba($selection_bg_normal,0.7); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
+  }
+}
+
+// combobox stuff
+combobox button {
+  padding: 4px;
+}
+combobox arrow {
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+  min-height: 16px;
+  min-width: 16px;
+}
+
+// color buttons
+colorswatch.activatable{
+  margin:0px;
+  padding:2;
+  border-radius:6;
+  border:none;
+  margin-right:-1px;
+  margin-left:-3px;
+}
+
+// header buttons in treeviews
+.view header button {
+  border-radius: 0;
+  margin-top: 1px;
+
+  &:hover {
+    background-color: rgba($button_decoration_hover,0.3);
+    border-color: rgba($button_fg_normal,0.2);
+  }
+}
+
+// extra states
+button.suggested-action {
+  background-color: rgba($selection_bg_normal,0.15);
+  border-color: rgba($selection_bg_normal,0.6);
+
+  &:hover {
+    border-color: $selection_bg_normal;
+  }
+
+  &:disabled {
+    background-color: rgba($selection_bg_normal,0.05);
+    border-color: rgba($selection_bg_normal,0.4);
+  }
+}
+button.destructive-action {
+  background-color: rgba($button_fg_negative,0.2);
+  border-color: rgba($button_fg_negative,0.6);
+
+  &:hover {
+    border-color: $button_fg_negative;
+  }
+  &:hover:active {
+    background-color: rgba($button_fg_negative,0.3);
+  }
+
+  &:disabled {
+    background-color: rgba($button_fg_negative,0.1);
+    border-color: rgba($button_fg_negative,0.4)
+  }
+}
+
+
+// titlebuttons
+.titlebutton {
+  padding: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: none;
+  border: none;
+  color: $header_fg_normal;
+  border-radius: 999px;
+
+  &:last-child {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: $header_fg_normal;
+    color: $header_bg_normal;
+  }
+  &:hover:active {
+    background-color: rgba($header_fg_normal,0.4);
+    color: $header_bg_normal;
+  }
+
+  &.close:hover {
+    background-color: mix(white,$header_fg_negative,60%);
+  }
+  &.close:hover:active {
+    background-color: mix($header_fg_normal,$header_fg_negative,60%);
+  }
+}

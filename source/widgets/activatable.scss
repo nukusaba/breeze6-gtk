@@ -1,0 +1,85 @@
+@use "../colors/colors.scss" as *;
+
+// buttons but with another name, because we couldnt just leave it at having buttons, we needed buttons that are buttons, but not buttons.
+.activatable {
+  background-color: transparent;
+  color: $view_fg_normal;
+  border: 1px solid transparent;
+  margin: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  min-height: 30px;
+  border-radius: 6px;
+
+  & image {
+    padding: 5px;
+  }
+
+  &:hover {
+    background-color: rgba($selection_bg_normal,0.2);
+    color: $view_fg_normal;
+    border-color: $selection_bg_normal;
+  }
+  &:selected,
+  &:hover:active {
+    background-color: $selection_bg_normal;
+    color: $selection_fg_normal;
+    border-color: $selection_bg_normal;
+  }
+}
+
+.sidebar .activatable {
+  border-radius: 0;
+  margin: 0;
+  border: none;
+}
+
+
+// fuck idk what this even is. very messy stuff, needed for those weird gtk4 but 3 apps.
+flowbox, flowbox.content{
+  background: none;
+}
+flowbox flowboxchild:selected{
+  background-color: rgba($window_fg_normal,0.15);
+}
+
+.app-notification{
+  background-color: $tooltip_bg_normal;
+  color: $tooltip_fg_normal;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.content .activatable .activatable, .content .content{
+  background-color: transparent;
+  border: none;
+}
+.content, .content .activatable {
+  background-color: $view_bg_normal;
+  color: $view_fg_normal;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  border: 1px solid rgba($view_fg_normal,0.2);
+  border-bottom: 1px solid rgba($breeze_shade,0.7);
+  border-top: none;
+
+  &:first-child { border-top: 1px solid rgba($view_fg_normal,0.2); }
+  &:last-child { border-bottom: 1px solid rgba($view_fg_normal,0.2); }
+  &:only-child { border: 1px solid rgba($view_fg_normal,0.2); }
+}
+.content:first-child, .content .activatable:first-child{
+  border-radius: 6px 6px 0 0;
+  padding: 0;
+}
+.content:last-child, .content .activatable:last-child{
+  border-radius: 0 0 6px 6px;
+}
+.content:only-child, .content .activatable:only-child{
+  border-radius: 6px;
+}
+.content .activatable:hover{
+  background-color: rgba($selection_bg_normal,0.3);
+}

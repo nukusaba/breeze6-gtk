@@ -1,0 +1,28 @@
+@use "../colors/colors.scss" as *;
+
+separator {
+  background-color: rgba($window_fg_normal,0.2);
+  margin: 3px;
+  min-width: 1px;
+  min-height: 1px;
+
+  &.horizontal {
+    background-color: rgba($window_fg_normal,0.2);
+  }
+
+  // FUCK YOU VERTICAL SEPARATOR, INTO THE ABYSS YOU GO!
+  &.vertical {
+    margin: 0;
+    padding: 0;
+    background: none;
+    min-width: 0;
+  }
+}
+
+// paned is probably the most annoying thing in gtk, it will break any theme you make unless you KILL IT.
+paned separator:not(.horizontal) {
+  margin: -1;
+  padding: 0;
+  background: none;
+  color: 0;
+}

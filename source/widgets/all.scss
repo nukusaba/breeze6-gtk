@@ -1,0 +1,14 @@
+@use "../colors/colors.scss" as *;
+
+// im lazy
+*:disabled {
+  color: rgba($window_fg_inactive,0.6);
+}
+*:selected {
+  background-color: $selection_bg_normal;
+  color: $selection_fg_normal;
+}
+
+.link {
+  color: $window_fg_link;
+}

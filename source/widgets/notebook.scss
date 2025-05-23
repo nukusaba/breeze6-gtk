@@ -1,0 +1,51 @@
+@use "../colors/colors.scss" as *;
+
+// notebook
+notebook arrow {
+  color: $window_fg_normal;
+
+  &:hover {
+    color: $selection_bg_normal;
+  }
+  &:disabled {
+    color: rgba($window_fg_normal,0.6);
+  }
+}
+notebook tab {
+  border: 1px solid transparent;
+  border-top: 5px solid transparent;
+  background-color: $view_bg_normal;
+  color: $view_fg_normal;
+  padding: 5px;
+
+  &:first-child {
+    border-top-left-radius: 6px;
+  }
+  &:last-child {
+    border-top-right-radius: 6px;
+  }
+  &:only-child {
+    border-radius: 6px 6px 0 0;
+  }
+
+  & label {
+    border-bottom: 1px solid transparent;
+  }
+
+  &:hover {
+    background-color: rgba($selection_bg_normal,0.3);
+  }
+  &:checked,
+  &:active:hover {
+    background-color: $view_bg_normal;
+    border-color: rgba($view_fg_normal,0.2);
+    border-top-color: $selection_bg_normal;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: -1px;
+    border-bottom-color: $view_bg_normal;
+
+    & label {
+      border-color: $selection_bg_normal;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@use "../colors/colors.scss" as *;
+
+// menu / menuitem
+menubar {
+  background-color: $header_bg_normal;
+
+  & menuitem {
+    background-color: transparent;
+    color: $header_fg_normal;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover {
+      background-color: $window_decoration_hover;
+    }
+  }
+  & menu menuitem, & .menu menuitem {
+    padding: 4;
+  }
+}
+
+menu, .menu {
+  background-color: $window_bg_normal;
+  color: $window_fg_normal;
+  padding: 4px;
+  border: 1px solid rgba($window_fg_normal,0.2);
+  border-radius: 6px;
+
+  & menuitem {
+    background: none;
+    color: $window_fg_normal;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 4px;
+
+    &:hover {
+      background-color: rgba($button_decoration_focus,0.3);
+      border-color: $selection_bg_normal;
+    }
+  }
+}
+
+// popover
+popover {
+  background-color: $window_bg_normal;
+  color: $window_fg_normal;
+  border: 1px solid rgba($window_fg_normal,0.2);
+  border-radius: 6px;
+
+
+  & modelbutton {
+    background: none;
+    color: $window_fg_normal;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 4px;
+    margin: -1px;
+
+    &:hover {
+      background-color: rgba($selection_bg_normal,0.3);
+      border-color: $selection_bg_normal;
+    }
+  }
+}
