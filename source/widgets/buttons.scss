@@ -125,9 +125,12 @@ button.destructive-action {
   }
 
   &.close:hover {
-    background-color: mix(white,$header_fg_negative,60%);
+    background-color: mix(white,$header_fg_negative,90%);
+  }
+  &.close:backdrop:hover {
+    background-color: $header_fg_negative;
   }
   &.close:hover:active {
-    background-color: mix($header_fg_normal,$header_fg_negative,60%);
+    background-color: mix($header_bg_normal,$header_fg_negative,60%);
   }
 }
