@@ -62,13 +62,30 @@ flowbox flowboxchild:selected{
   margin: 0;
 }
 .content {
-  border: 1px solid rgba($view_fg_normal,0.2);
+  border: 1px solid mix($view_bg_normal,black,50%);
+  box-shadow:
+    -1px 0 0 0 rgba($view_fg_normal,0.05),
+    1px 0 0 0 rgba($view_fg_normal,0.05);
   border-bottom: 1px solid rgba($breeze_shade,0.7);
   border-top: none;
+  margin-left: 1px;
+  margin-right: 1px;
 
-  &:first-child { border-top: 1px solid rgba($view_fg_normal,0.2); }
-  &:last-child { border-bottom: 1px solid rgba($view_fg_normal,0.2); }
-  &:only-child { border: 1px solid rgba($view_fg_normal,0.2); }
+  &:first-child { border-top: 1px solid mix($view_bg_normal,black,50%); box-shadow: 0 -1px 0 0 rgba($view_fg_normal,0.05); margin-top: 1px; }
+  &:last-child { border-bottom: 1px solid mix($view_bg_normal,black,50%); box-shadow: 0 1px 0 0 rgba($view_fg_normal,0.05); margin-bottom: 1px; }
+  &:only-child { border: 1px solid mix($view_bg_normal,black,50%); box-shadow: 0 0 0 1px rgba($view_fg_normal,0.05); margin: 1px; }
+
+  // fixing some stuff inside just to be sure
+  & entry {
+    margin: 0;
+  }
+  & spinbutton entry {
+    margin: 0;
+  }
+  & switch {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .content:first-child, .content .activatable:first-child{
   border-radius: 6px 6px 0 0;
@@ -80,6 +97,9 @@ flowbox flowboxchild:selected{
 .content:only-child, .content .activatable:only-child{
   border-radius: 6px;
 }
-.content .activatable:hover{
-  background-color: rgba($selection_bg_normal,0.3);
+.content .activatable {
+  border: none;
+  &:hover{
+    background-color: rgba($view_fg_normal,0.05);
+  }
 }
