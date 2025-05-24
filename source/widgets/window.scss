@@ -33,8 +33,8 @@ tooltip decoration {
   background-color: mix($view_bg_normal,$window_bg_normal,50%);
   border: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
 
-    & frame,
-    & .frame {
+    & > frame,
+    & > .frame {
       border: none;
     }
 

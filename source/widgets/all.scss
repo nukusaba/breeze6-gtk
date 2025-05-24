@@ -9,6 +9,14 @@
   color: $selection_fg_normal;
 }
 
-.link {
+*:link {
   color: $window_fg_link;
+}
+*:visited {
+  color: $window_fg_link_visited;
+}
+
+
+.dim-label {
+  color: $window_fg_inactive;
 }
