@@ -28,11 +28,11 @@ levelbar trough block.filled {
 progressbar trough,
 scale fill,
 scale trough {
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: $button_bg_normal;
   border: 1px solid rgba($button_fg_normal, 0.2);
-  min-width: 8px;
-  min-height: 8px;
+  min-width: 6px;
+  min-height: 6px;
   margin: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -59,9 +59,9 @@ scale slider,
 progressbar slider {
   background-color: $button_bg_normal;
   border: 1px solid mix($button_bg_normal, $button_fg_normal, 80%);
-  min-height: 18px;
-  min-width: 18px;
-  margin: -12px;
+  min-height: 10px;
+  min-width: 10px;
+  margin: -11px;
   border-radius: 999px;
 }
 scale slider:hover,

@@ -12,7 +12,8 @@ menubar {
     padding-right: 10px;
 
     &:hover {
-      background-color: $window_decoration_hover;
+      background-color: $button_decoration_focus;
+      color: $selection_fg_normal;
     }
   }
   & menu menuitem, & .menu menuitem {

@@ -10,6 +10,8 @@ window.background.csd.unified {
     0 0 40px rgba($breeze_shade,0.4);
   margin: 10px;
 }
+
+// this is needed because decorations are on other things than the window, eventhough those should be targeted sepperatly anyway.
 .popup decoration,
 tooltip decoration {
   background: none;
@@ -27,8 +29,6 @@ tooltip decoration {
 }
 
 // frame
-// why is there two?
-frame,
 .frame {
   background-color: mix($view_bg_normal,$window_bg_normal,50%);
   border: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
@@ -51,7 +51,7 @@ frame,
   border-right: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
 }
 
-// section frames, because frames wherent enough again
+// section frames, because frames arent frames, unless they are framed but differently than other frames
 frame border {
   border: 1px solid rgba($view_fg_normal,0.2);
 
