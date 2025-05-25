@@ -6,9 +6,10 @@ The default Breeze GTK theme is kinda bad imo. <br>
 This is still very much a for-fun-first project, and will only be worked on when there is a need for me to do so.
 
 ## Completion
-- [ ] GTK3 Theme.
-- [ ] GTK4 Theme. (unclear if this will be made) <br>
-GTK3 is pretty much done and usable. GTK4 is completly broken still, will be worked on.
+- [x] GTK3 Theme.
+- [ ] GTK4 Theme. 
+- [ ] Libadwaita Theme.
+GTK3 (and probably GTK4 non-libadwaita) is pretty much done and usable. Libadwaita is completly broken still, will be worked on.
 
 ## Installation
 ### Dependencies
