@@ -14,7 +14,7 @@ notebook arrow {
 }
 notebook tab {
   border: 1px solid transparent;
-  border-top: 5px solid transparent;
+  border-top: 3px solid transparent;
   background-color: $view_bg_normal;
   color: $view_fg_normal;
   padding: 5px;
@@ -48,5 +48,16 @@ notebook tab {
     & label {
       border-color: $selection_bg_normal;
     }
+  }
+}
+
+notebook button {
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  &.close {
+    padding: 1px;
+    margin: 0;
   }
 }
