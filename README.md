@@ -9,7 +9,7 @@ This is still very much a for-fun-first project, and will only be worked on when
 - [x] GTK3 Theme.
 - [ ] GTK4 Theme. 
 - [ ] Libadwaita Theme. <br>
-GTK3 (and probably GTK4 non-libadwaita) is pretty much done and usable. Libadwaita is completly broken still, will be worked on.
+GTK3 (and probably GTK4 non-libadwaita) is pretty much done and usable. Libadwaita is completly broken still, will be worked on (maybe).
 
 ## Installation
 ### Dependencies
