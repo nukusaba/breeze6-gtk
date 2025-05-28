@@ -65,3 +65,16 @@ actionbar,
 .primary-toolbar {
   padding: 5px;
 }
+
+
+
+// bismuth decoration (uncomment to use)
+/*
+decoration,
+window.background.csd.unified {
+  background-color: $header_bg_normal;
+  border-radius: 0;
+  box-shadow: 0 0 0 3px $window_decoration_focus;
+  margin: 10px;
+}
+*/
