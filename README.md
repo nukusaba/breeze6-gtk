@@ -26,11 +26,10 @@ cd breeze6-gtk/source
 ./build-install.sh --[colorscheme]
 ```
 
-If you want to make your own colorscheme you can do so in the `colors/colors.custom.scss` file and than run.
+If you want to make your own colorscheme you can do so in the `colors-custom/colors.custom.scss` file and than run.
 ```
 ./build-install.sh --custom
 ```
-**Note:** All the variables are required with corrent name. You can use one of the existing colorschemes as a base
 
 ## Colorschemes
 All preset colorschemes are schemes that i personaly use, colorschemes will only be added when i use them.
