@@ -21,7 +21,7 @@ git clone https://github.com/mellowaru/breeze6-gtk.git
 cd breeze6-gtk/source
 ```
 
-- Install theme
+- Install theme <br>
 You can run without a argument to see all colorscheme options.
 ```
 ./build-install.sh --[colorscheme]
