@@ -16,6 +16,8 @@ if [ "$1" == "" ]; then
   exit 1
 fi
 # colors
+color_dir="colors"
+
 if [ "$1" == "--breeze-dark" ]; then
   color="breeze-dark"
 elif [ "$1" == "--breeze-light" ]; then
@@ -24,12 +26,13 @@ elif [ "$1" == "--hanokira" ]; then
   color="hanokira"
 elif [ "$1" == "--sweet" ]; then
   color="sweet"
-elif [ "$1" == "--custom" ]; then
-  color="custom"
 elif [ "$1" == "--shimaray" ]; then
   color="shimaray"
+elif [ "$1" == "--custom" ]; then
+  color="custom"
+  color_dir="colors-custom"
 fi
-mv colors/colors."$color".scss colors/colors.scss # this will be reset after the script runs
+mv "$color_dir"/colors."$color".scss colors/colors.scss # this will be reset after the script runs
 
 # libadwaita
 if [ "$2" == "--libadwaita" ]; then
@@ -61,7 +64,7 @@ cp -r assets/ ~/.themes/"$theme_name"/gtk-4.0/
 cp index.theme ~/.themes/"$theme_name"/
 
 # reset
-mv colors/colors.scss colors/colors."$color".scss
+mv colors/colors.scss "$color_dir"/colors."$color".scss
 
 # exit
 echo "To install libadwata version, add --libadwaita argument at the end."
