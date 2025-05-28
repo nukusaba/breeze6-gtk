@@ -102,4 +102,7 @@ flowbox flowboxchild:selected{
   &:hover{
     background-color: rgba($view_fg_normal,0.05);
   }
+  &:hover:active{
+    color: $view_fg_normal;
+  }
 }
