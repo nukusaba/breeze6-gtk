@@ -26,6 +26,8 @@ elif [ "$1" == "--sweet" ]; then
   color="sweet"
 elif [ "$1" == "--custom" ]; then
   color="custom"
+elif [ "$1" == "--shimaray" ]; then
+  color="shimaray"
 fi
 mv colors/colors."$color".scss colors/colors.scss # this will be reset after the script runs
 
