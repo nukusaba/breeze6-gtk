@@ -11,20 +11,26 @@ This is still very much a for-fun-first project, and will only be worked on when
 - [ ] Libadwaita Theme. <br>
 GTK3 (and probably GTK4 non-libadwaita) is pretty much done and usable. Libadwaita is completly broken still, will be worked on (maybe).
 
-## Installation
-### Dependencies
+## Dependencies
 - Dart Sass (pre v3.0.0)
 
-### Installation
-1. Choose/create the colorscheme you want from the colors.scss file located in `source/colors/colors.scss`
-  - Make sure to comment out colorschemes you dont want.
-  
-2. Install theme.
-Build the theme (no install).
+## Installation
+- Clone repo
 ```
-./build.sh
+git clone https://github.com/mellowaru/breeze6-gtk.git
+cd breeze6-gtk/source
 ```
-Building the theme and installing it.
+
+- Install theme
 ```
-./build-install.sh
+./build-install.sh --[colorscheme]
 ```
+
+If you want to make your own colorscheme you can do so in the `colors/colors.custom.scss` file and than run.
+```
+./build-install.sh --custom
+```
+**Note:** All the variables are required with corrent name. You can use one of the existing colorschemes as a base
+
+## Colorschemes
+All preset colorschemes are schemes that i personaly use, colorschemes will only be added when i use them.
