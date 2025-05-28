@@ -5,7 +5,7 @@
 @define-color theme_text_color #{ $window_fg_normal };
 @define-color theme_bg_color #{ $window_bg_normal };
 @define-color theme_base_color #{ $header_bg_normal };
-@define-color theme_selected_bg_color #{ $selection_bg_normal };
+@define-color theme_selected_bg_color #{ rgba($selection_bg_normal,0.5) };
 @define-color theme_selected_fg_color #{ $selection_fg_normal };
 @define-color fg_color #{ $window_fg_normal };
 @define-color text_color #{ $window_fg_normal };
