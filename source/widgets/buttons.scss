@@ -71,21 +71,21 @@ colorswatch.activatable{
 
 // extra states
 button.suggested-action {
-  background-color: rgba($selection_bg_normal,0.15);
-  border-color: rgba($selection_bg_normal,0.6);
+  background-color: rgba($selection_bg_normal,0.2);
+  border-color: rgba($selection_bg_normal,0.4);
 
   &:hover {
     border-color: $selection_bg_normal;
   }
 
   &:disabled {
-    background-color: rgba($selection_bg_normal,0.05);
-    border-color: rgba($selection_bg_normal,0.4);
+    background-color: rgba($selection_bg_normal,0.1);
+    border-color: rgba($selection_bg_normal,0.3);
   }
 }
 button.destructive-action {
   background-color: rgba($button_fg_negative,0.2);
-  border-color: rgba($button_fg_negative,0.6);
+  border-color: rgba($button_fg_negative,0.4);
 
   &:hover {
     border-color: $button_fg_negative;
@@ -96,7 +96,7 @@ button.destructive-action {
 
   &:disabled {
     background-color: rgba($button_fg_negative,0.1);
-    border-color: rgba($button_fg_negative,0.4)
+    border-color: rgba($button_fg_negative,0.2)
   }
 }
 

@@ -6,5 +6,6 @@ selection {
 
   &:backdrop {
     background-color: rgba($selection_bg_normal,0.3);
+    color: $window_fg_normal;
   }
 }
