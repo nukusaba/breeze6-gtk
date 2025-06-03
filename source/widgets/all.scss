@@ -20,3 +20,11 @@
 .dim-label {
   color: $window_fg_inactive;
 }
+
+* {
+  font-weight: $font-weight;
+}
+
+.monospace {
+  font-family: $mono-font;
+}

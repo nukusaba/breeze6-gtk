@@ -37,7 +37,8 @@ menu, .menu {
 
     &:hover {
       background-color: rgba($button_decoration_focus,0.3);
-      border-color: $selection_bg_normal;
+      border-color: $button_decoration_focus;
+      color: $window_fg_normal;
     }
   }
 }
@@ -58,8 +59,8 @@ popover {
     padding: 4px;
 
     &:hover {
-      background-color: rgba($selection_bg_normal,0.3);
-      border-color: $selection_bg_normal;
+      background-color: rgba($button_decoration_focus,0.3);
+      border-color: $button_decoration_focus;
     }
   }
 }
