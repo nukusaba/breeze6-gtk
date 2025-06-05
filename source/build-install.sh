@@ -11,7 +11,7 @@ theme_name="Breeze6-GTK"
 
 if [ "$1" == "" ]; then
   echo ""
-  echo "Color options: --breeze-dark, --breeze-light, --hanokira, --sweet, --shimaray, --catppccin"
+  echo "Color options: --breeze-dark, --breeze-light, --sweet, --catppccin"
   echo ""
   echo "Custom: --custom"
   echo ""
