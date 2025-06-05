@@ -110,3 +110,10 @@ $font-weight: 400;
 $font-title-weight: 400;
 $font-menu-weight: 400;
 $mono-font: "monospace";
+// font sizes
+$font-size:  10pt         ; // default: 10pt
+$font-menu-size:  10pt         ; // default: 10pt
+$font-title-size:  10pt         ; // default: 10pt
+
+// Header/Titlebar padding
+$header-padding:  5px          ; // extra padding in the headerbar

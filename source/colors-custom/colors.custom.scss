@@ -59,7 +59,15 @@
 
 // FONT SETTINGS
   // 400 = regular. 500 = medium. 600 = semi-bold. 700 = bold. 800 = extra bold. 900 = black.
-                 $font-weight:  400          ;
-            $font-menu-weight:  400          ;
-           $font-title-weight:  400          ;
+                 $font-weight:  400          ; // default: 400
+            $font-menu-weight:  400          ; // default: 400
+           $font-title-weight:  400          ; // default: 400
+  // font sizes
+                   $font-size:  10pt         ; // default: 10pt
+              $font-menu-size:  10pt         ; // default: 10pt
+             $font-title-size:  10pt         ; // default: 10pt
+  // monospaced font
                    $mono-font:  "monospace"  ; // font for monospace places (regular font adjusts to plasma settings)
+
+// Header/Titlebar padding
+              $header-padding:  5px          ; // extra padding in the headerbar
