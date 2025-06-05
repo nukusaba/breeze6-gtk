@@ -4,7 +4,7 @@ headerbar {
   background-color: $header_bg_normal;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  padding: 3px;
+  padding: 5px;
   box-shadow: 0 1px 0 mix($header_fg_normal,$header_bg_normal,10%);
 
   &:backdrop {
@@ -14,4 +14,8 @@ headerbar {
 // because GNOME was too dumb to make the headerbar in their gtk4 style gtk3 apps roundable, this needs to be done. FU GNOME
 .background.csd.unified headerbar {
   background-color: transparent;
+}
+
+.title {
+  font-weight: $font-title-weight;
 }

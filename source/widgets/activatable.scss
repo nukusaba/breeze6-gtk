@@ -25,6 +25,13 @@
     background-color: $selection_bg_normal;
     color: $selection_fg_normal;
     border-color: $selection_bg_normal;
+
+    & image {
+      color: $selection_fg_normal;
+    }
+    & button:hover:active {
+      background-color: rgba($selection_fg_normal,0.3);
+    }
   }
 }
 
