@@ -11,7 +11,7 @@ theme_name="Breeze6-GTK"
 
 if [ "$1" == "" ]; then
   echo ""
-  echo "Color options: --breeze-dark, --breeze-light, --hanokira, --sweet, --shimaray"
+  echo "Color options: --breeze-dark, --breeze-light, --hanokira, --sweet, --shimaray, --catppccin"
   echo ""
   echo "Custom: --custom"
   echo ""
@@ -30,6 +30,8 @@ elif [ "$1" == "--sweet" ]; then
   color="sweet"
 elif [ "$1" == "--shimaray" ]; then
   color="shimaray"
+elif [ "$1" == "--catppuccin" ]; then
+  color="catppuccin"
 elif [ "$1" == "--custom" ]; then
   color="custom"
   color_dir="colors-custom"
