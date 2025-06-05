@@ -64,7 +64,7 @@ colorswatch.activatable{
   margin-top: 1px;
 
   &:hover {
-    background-color: rgba($button_decoration_hover,0.3);
+    background-color: rgba($window_decoration_hover,0.3);
     border-color: rgba($button_fg_normal,0.2);
   }
 }

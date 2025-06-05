@@ -34,7 +34,7 @@ notebook tab {
   }
 
   &:hover {
-    background-color: rgba($selection_bg_normal,0.3);
+    background-color: rgba($selection_bg_normal,0.1);
   }
   &:checked,
   &:active:hover {

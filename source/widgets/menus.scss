@@ -12,7 +12,7 @@ menubar {
     padding-right: 10px;
 
     &:hover {
-      background-color: $button_decoration_focus;
+      background-color: $window_decoration_focus;
       color: $selection_fg_normal;
     }
   }
@@ -36,8 +36,8 @@ menu, .menu {
     padding: 4px;
 
     &:hover {
-      background-color: rgba($button_decoration_focus,0.3);
-      border-color: $button_decoration_focus;
+      background-color: rgba($window_decoration_focus,0.3);
+      border-color: $window_decoration_focus;
       color: $window_fg_normal;
     }
   }
@@ -59,8 +59,8 @@ popover {
     padding: 4px;
 
     &:hover {
-      background-color: rgba($button_decoration_focus,0.3);
-      border-color: $button_decoration_focus;
+      background-color: rgba($window_decoration_focus,0.3);
+      border-color: $window_decoration_focus;
     }
   }
 }
