@@ -1,121 +1,65 @@
-// Shimaray
-// colors:button
-       $button_bg_normal: #ffffff;
-          $button_bg_alt: #ffffff;
-$button_decoration_focus: #ffffff;
-$button_decoration_hover: #ffffff;
-       $button_fg_active: #ffffff;
-     $button_fg_inactive: #ffffff;
-         $button_fg_link: #ffffff;
-     $button_fg_negative: #ffffff;
-      $button_fg_neutral: #ffffff;
-       $button_fg_normal: #ffffff;
-     $button_fg_positive: #ffffff;
- $button_fg_link_visited: #ffffff;
+// Custom Colors and Settings
+// BUTTONS
+            $button_bg_normal:  #ffffff   ; // background
+          $button_fg_inactive:  #ffffff   ; // disabled text
+          $button_fg_negative:  #ffffff   ; // errors/destructive actions
+            $button_fg_normal:  #ffffff   ; // regular text
 
-// colors:complementary
-         $comp_bg_normal: #ffffff;
-            $comp_bg_alt: #ffffff;
-  $comp_decoration_focus: #ffffff;
-  $comp_decoration_hover: #ffffff;
-         $comp_fg_active: #ffffff;
-       $comp_fg_inactive: #ffffff;
-           $comp_fg_link: #ffffff;
-       $comp_fg_negative: #ffffff;
-        $comp_fg_neutral: #ffffff;
-         $comp_fg_normal: #ffffff;
-       $comp_fg_positive: #ffffff;
-   $comp_fg_link_visited: #ffffff;
+// COMPLEMENTARY
+              $comp_bg_normal:  #ffffff   ; // background
+            $comp_fg_inactive:  #ffffff   ; // disabled text
+            $comp_fg_negative:  #ffffff   ; // errors/destructive actions
+              $comp_fg_normal:  #ffffff   ; // regular text
 
-// colors:header
-       $header_bg_normal: #ffffff;
-          $header_bg_alt: #ffffff;
-$header_decoration_focus: #ffffff;
-$header_decoration_hover: #ffffff;
-       $header_fg_active: #ffffff;
-     $header_fg_inactive: #ffffff;
-         $header_fg_link: #ffffff;
-     $header_fg_negative: #ffffff;
-      $header_fg_neutral: #ffffff;
-       $header_fg_normal: #ffffff;
-     $header_fg_positive: #ffffff;
- $header_fg_link_visited: #ffffff;
-// colors:header_inactive [inactive]
-       $header_inactive_bg_normal: #ffffff;
-          $header_inactive_bg_alt: #ffffff;
-$header_inactive_decoration_focus: #ffffff;
-$header_inactive_decoration_hover: #ffffff;
-       $header_inactive_fg_active: #ffffff;
-     $header_inactive_fg_inactive: #ffffff;
-         $header_inactive_fg_link: #ffffff;
-     $header_inactive_fg_negative: #ffffff;
-      $header_inactive_fg_neutral: #ffffff;
-       $header_inactive_fg_normal: #ffffff;
-     $header_inactive_fg_positive: #ffffff;
- $header_inactive_fg_link_visited: #ffffff;
+// HEADER (use title bar colors if your kde colorscheme has them)
+            $header_bg_normal:  #ffffff   ; // background
+          $header_fg_inactive:  #ffffff   ; // disabled text
+          $header_fg_negative:  #ffffff   ; // errors/destructive actions
+            $header_fg_normal:  #ffffff   ; // regular text
 
-// colors:selection
-       $selection_bg_normal: #ffffff;
-          $selection_bg_alt: #ffffff;
-$selection_decoration_focus: #ffffff;
-$selection_decoration_hover: #ffffff;
-       $selection_fg_active: #ffffff;
-     $selection_fg_inactive: #ffffff;
-         $selection_fg_link: #ffffff;
-     $selection_fg_negative: #ffffff;
-      $selection_fg_neutral: #ffffff;
-       $selection_fg_normal: #ffffff;
-     $selection_fg_positive: #ffffff;
- $selection_fg_link_visited: #ffffff;
+// HEADER (inactive) (copy colors from normal header if not set in your colorschemes)
+   $header_inactive_bg_normal:  #ffffff   ; // background
+ $header_inactive_fg_inactive:  #ffffff   ; // disabled text
+ $header_inactive_fg_negative:  #ffffff   ; // errors/destructive actions
+   $header_inactive_fg_normal:  #ffffff   ; // regular text
 
-// colors:tooltip
-       $tooltip_bg_normal: #ffffff;
-          $tooltip_bg_alt: #ffffff;
-$tooltip_decoration_focus: #ffffff;
-$tooltip_decoration_hover: #ffffff;
-       $tooltip_fg_active: #ffffff;
-     $tooltip_fg_inactive: #ffffff;
-         $tooltip_fg_link: #ffffff;
-     $tooltip_fg_negative: #ffffff;
-      $tooltip_fg_neutral: #ffffff;
-       $tooltip_fg_normal: #ffffff;
-     $tooltip_fg_positive: #ffffff;
- $tooltip_fg_link_visited: #ffffff;
+// SELECTION / ACCENT
+         $selection_bg_normal:  #ffffff   ; // background
+       $selection_fg_inactive:  #ffffff   ; // disabled text
+       $selection_fg_negative:  #ffffff   ; // errors/destructive actions
+         $selection_fg_normal:  #ffffff   ; // regular text
 
-// colors:view
-        $view_bg_normal: #ffffff;
-           $view_bg_alt: #ffffff;
- $view_decoration_focus: #ffffff;
- $view_decoration_hover: #ffffff;
-        $view_fg_active: #ffffff;
-      $view_fg_inactive: #ffffff;
-          $view_fg_link: #ffffff;
-      $view_fg_negative: #ffffff;
-       $view_fg_neutral: #ffffff;
-        $view_fg_normal: #ffffff;
-      $view_fg_positive: #ffffff;
-  $view_fg_link_visited: #ffffff;
+// TOOLTIP
+           $tooltip_bg_normal:  #ffffff   ; // background
+         $tooltip_fg_inactive:  #ffffff   ; // disabled text
+         $tooltip_fg_negative:  #ffffff   ; // errors/destructive actions
+           $tooltip_fg_normal:  #ffffff   ; // regular text
 
-// colors:window
-       $window_bg_normal: #ffffff;
-          $window_bg_alt: #ffffff;
-$window_decoration_focus: #ffffff;
-$window_decoration_hover: #ffffff;
-       $window_fg_active: #ffffff;
-     $window_fg_inactive: #ffffff;
-         $window_fg_link: #ffffff;
-     $window_fg_negative: #ffffff;
-      $window_fg_neutral: #ffffff;
-       $window_fg_normal: #ffffff;
-     $window_fg_positive: #ffffff;
- $window_fg_link_visited: #ffffff;
+// VIEW
+              $view_bg_normal:  #ffffff   ; // background
+            $view_fg_inactive:  #ffffff   ; // disabled text
+            $view_fg_negative:  #ffffff   ; // errors/destructive actions
+              $view_fg_normal:  #ffffff   ; // regular text
 
-// shade (this is a special color it should match the shadow color of the breeze titlebar (ignored if bismuth decoration is used))
- $breeze_shade: #ffffff;
+// WINDOW
+            $window_bg_normal:  #ffffff   ; // background
+     $window_decoration_focus:  #ffffff   ; // focus. such as hovering a menu item
+     $window_decoration_hover:  #ffffff   ; // used for *some* hover related things
+            $window_fg_active:  #ffffff   ; // for active things
+          $window_fg_inactive:  #ffffff   ; // disabled text
+              $window_fg_link:  #ffffff   ; // links
+          $window_fg_negative:  #ffffff   ; // errors/destructive actions
+           $window_fg_neutral:  #ffffff   ; // warning color
+            $window_fg_normal:  #ffffff   ; // regular text
+          $window_fg_positive:  #ffffff   ; // success / good color
+      $window_fg_link_visited:  #ffffff   ; // visited links
 
-// fonts
-       $font-weight: 400;
-  $font-menu-weight: 400;
- $font-title-weight: 400;
+// SHADE (this is a special color it should match the shadow color of the breeze titlebar (ignored if bismuth decoration is used))
+                $breeze_shade:  #ffffff   ;
 
-         $mono-font: "monospace";
+// FONT SETTINGS
+  // 400 = regular. 500 = medium. 600 = semi-bold. 700 = bold. 800 = extra bold. 900 = black.
+                 $font-weight:  400          ;
+            $font-menu-weight:  400          ;
+           $font-title-weight:  400          ;
+                   $mono-font:  "monospace"  ; // font for monospace places (regular font adjusts to plasma settings)
