@@ -138,3 +138,27 @@ radio {
     color: rgba($button_fg_normal,0.7);
   }
 }
+
+// in menus
+// still kinda broken
+menuitem, modelbutton {
+  & check, & radio {
+    margin: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  // this isnt really ever seen in breeze, and might not be accurate, but its better for visibility
+}
+modelbutton {
+  &:hover check, &:hover radio,
+  &:hover:active check, &:hover:active radio {
+    color: $selection_fg_normal;
+  }
+}
+
+// extra for menu sizing
+menuitem check, menuitem radio {
+  padding: 8px;
+}
+

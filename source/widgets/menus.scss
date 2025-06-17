@@ -44,6 +44,7 @@ menu, .menu {
 }
 
 // popover
+// different from regular menus because breeze has two different menu styles, and this kinda emulates that
 popover {
   background-color: $window_bg_normal;
   color: $window_fg_normal;
@@ -55,12 +56,15 @@ popover {
     background: none;
     color: $window_fg_normal;
     border-radius: 6px;
-    border: 1px solid transparent;
     padding: 4px;
+    margin-bottom: 3px;
 
     &:hover {
-      background-color: rgba($window_decoration_focus,0.3);
-      border-color: $window_decoration_focus;
+      background-color: $selection_bg_normal;
+      color: $selection_fg_normal;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
