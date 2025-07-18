@@ -3,7 +3,9 @@ A new GTK theme to mimic the Breeze Qt style used by KDE.
 
 **Why?** <br>
 The default Breeze GTK theme is kinda bad imo. <br>
-This is still very much a for-fun-first project, and will only be worked on when there is a need for me to do so.
+<br>
+This *"project"* is a just something i do for fun when there is a reason for me to update it. its not meant to be perfect, its just meant to give me some more accuracy between gtk and qt apps that i use. i do *not* test with anything that i dont personaly use.
+
 
 ## Completion
 - [x] GTK3 Theme.
