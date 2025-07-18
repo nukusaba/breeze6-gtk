@@ -69,16 +69,16 @@ actionbar,
 
 
 // bismuth decoration (uncomment to use)
-/*
+
 decoration,
 window.background.csd.unified {
   background-color: $header_bg_normal;
   border-radius: 0;
-  box-shadow: 0 0 0 6px $window_decoration_focus;
+  box-shadow: 0 0 0 3px $window_decoration_focus;
   margin: 10px;
 
   &:backdrop {
-    box-shadow: 0 0 0 6px $window_bg_normal;
+    box-shadow: 0 0 0 3px $window_bg_normal;
   }
 }
-*/
+
