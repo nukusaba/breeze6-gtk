@@ -2,9 +2,9 @@
 
 scrollbar {
   min-width: 7px;
-  min-height: 7px;
+  min-height: 25px;
   padding: 5px;
-  box-shadow: 0 0 0 1px rgba($window_fg_normal,0.2);
+  padding-left: 2px;
 
   & button {
     min-height: 0;

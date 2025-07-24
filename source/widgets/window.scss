@@ -57,7 +57,14 @@ frame border {
 
   & > label {
     color: rgba($view_fg_normal,0.8);
+    padding-left: 6px;
   }
+}
+.section-frame > label {
+  color: rgba($view_fg_normal,0.7);
+}
+frame .frame {
+  border: none;
 }
 
 // toolbars
@@ -67,9 +74,8 @@ actionbar,
 }
 
 
-
+/*
 // bismuth decoration (uncomment to use)
-
 decoration,
 window.background.csd.unified {
   background-color: $header_bg_normal;
@@ -81,4 +87,4 @@ window.background.csd.unified {
     box-shadow: 0 0 0 4px $window_bg_normal;
   }
 }
-
+*/
