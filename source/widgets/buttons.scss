@@ -134,3 +134,36 @@ button.destructive-action {
     background-color: mix($header_bg_normal,$header_fg_negative,60%);
   }
 }
+
+
+// combobox
+combobox button {
+  border: 1px solid rgba($button_fg_normal,0.2);
+
+  .linked & {
+    border: 1px solid rgba($button_fg_normal,0.2);
+  }
+
+  &:hover, &.flat:hover
+  &:checked:hover, &.flat:checked:hover,
+  .linked &:hover, .linked &:checked:hover {
+    border-color: $selection_bg_normal;
+  }
+  &:hover:active, &.flat:hover:active,
+  .linked &:hover:active {
+    border-color: $selection_bg_normal;
+    background-color: rgba($selection_bg_normal,0.3);
+  }
+  &:checked, &.flat:checked,
+  .linked &:checked {
+    background-color: rgba($button_fg_normal,0.15);
+    border-color: rgba($selection_bg_normal,0.7); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
+  }
+
+  .linked &:first-child,
+  .linked &:last-child,
+  .linked &:only-child
+  .linked & {
+    border: 1px solid rgba($button_fg_normal,0.2);
+  }
+}

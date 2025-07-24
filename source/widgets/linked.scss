@@ -1,15 +1,37 @@
 @use "../colors/colors.scss" as *;
 
-.linked * {
-  border-radius: 0;
+.linked {
+  & * {
+    border-radius: 0;
 
-  &:first-child {
-    border-radius: 6px 0 0 6px;
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+    &:only-child {
+      border-radius: 6px;
+    }
   }
-  &:last-child {
-    border-radius: 0 6px 6px 0;
+
+  // button specifics to match linked buttons in kirta (only official kde app that has linked buttons to my knowlage)
+  & button:not(.combo):only-child, &button:not(.combo):first-child:only-child,
+  & entry:only-child, &entry:first-child:only-child{
+    margin-right: 0;
   }
-  &:only-child {
-    border-radius: 6px;
+  & button:not(.combo):first-child, & entry:first-child {
+    border-right: none;
+    margin-right: 1px;
+  }
+  & button:not(.combo):last-child, & entry:last-child {
+    border-left: none;
+    margin-right: 0;
+  }
+  & button:not(.combo):not(:first-child):not(:last-child):not(:only-child),
+  & entry:not(:first-child):not(:last-child):not(:only-child) {
+    border-left: none;
+    border-right: none;
+    margin-right: 1px;
   }
 }
