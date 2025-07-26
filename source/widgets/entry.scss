@@ -1,14 +1,12 @@
-@use "../colors/colors.scss" as *;
-
 entry {
-  background-color: $view_bg_normal;
-  color: $view_fg_normal;
-  border: 1px solid rgba($view_fg_normal, 0.2);
+  background-color: unquote("@content_view_bg_breeze");
+  color: unquote("@theme_fg_color_breeze");
+  border: 1px solid unquote("@borders_breeze");
   padding: 7px;
   border-radius: 6px;
 
   &:focus {
-    border-color: $selection_bg_normal;
+    border-color: unquote("@theme_selected_bg_color_breeze");
   }
 
   & image {

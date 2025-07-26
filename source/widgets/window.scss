@@ -1,13 +1,11 @@
-@use "../colors/colors.scss" as *;
-
 // decoration
 decoration,
 window.background.csd.unified {
-  background-color: $header_bg_normal;
+  background-color: unquote("@theme_header_background_breeze");
   border-radius: 6px 6px 0 0;
   box-shadow:
-    0 0 0 1px rgba($window_fg_normal,0.3),
-    0 0 40px rgba($breeze_shade,0.4);
+    0 0 0 1px unquote("alpha(@window_fg_normal,0.3)"),
+    0 0 40px unquote("alhpa(@shade_breeze6,0.4)");
   margin: 10px;
 }
 
@@ -24,14 +22,14 @@ tooltip decoration {
 
 // base background
 .background {
-  background-color: $window_bg_normal;
-  color: $window_fg_normal;
+  background-color: unquote("@theme_bg_color_breeze");
+  color: unquote("@theme_text_color_breeze");
 }
 
 // frame
 .frame {
-  background-color: mix($view_bg_normal,$window_bg_normal,50%);
-  border: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
+  background-color: unquote("mix(@content_view_bg_breeze,@theme_bg_color_breeze,0.5)");
+  border: 1px solid unquote("@borders_breeze");
 
     & > frame,
     & > .frame {
@@ -46,22 +44,17 @@ tooltip decoration {
 
 // sidebar
 .sidebar {
-  background-color: $view_bg_normal;
-  color: $view_fg_normal;
-  border-right: 1px solid mix($view_fg_normal,$view_bg_normal,20%);
+  background-color: unquote("@content_view_bg_breeze");
+  color: unquote("@theme_fg_color_breeze");
+  border-right: 1px solid unquote("@borders_breeze");
 }
 
 // section frames, because frames arent frames, unless they are framed but differently than other frames
 frame border {
-  border: 1px solid rgba($view_fg_normal,0.2);
-
-  & > label {
-    color: rgba($view_fg_normal,0.8);
-    padding-left: 6px;
-  }
+  border: 1px solid unquote("@borders_breeze");
 }
 .section-frame > label {
-  color: rgba($view_fg_normal,0.7);
+  color: unquote("alpha(@theme_fg_color_breeze,0.7)");
 }
 frame .frame {
   border: none;
@@ -74,17 +67,17 @@ actionbar,
 }
 
 
-/*
+
 // bismuth decoration (uncomment to use)
 decoration,
 window.background.csd.unified {
-  background-color: $header_bg_normal;
+  background-color: unquote("@theme_header_background_breeze");
   border-radius: 0;
-  box-shadow: 0 0 0 4px $window_decoration_focus;
+  box-shadow: 0 0 0 4px unquote("@theme_button_decoration_focus_breeze");
   margin: 10px;
 
   &:backdrop {
-    box-shadow: 0 0 0 4px $window_bg_normal;
+    box-shadow: 0 0 0 4px unquote("@theme_bg_color_breeze");
   }
 }
-*/
+

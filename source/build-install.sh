@@ -9,35 +9,6 @@ fi
 
 theme_name="Breeze6-GTK"
 
-if [ "$1" == "" ]; then
-  echo ""
-  echo "Color options: --breeze-dark, --breeze-light, --sweet, --catppccin"
-  echo ""
-  echo "Custom: --custom"
-  echo ""
-  exit 1
-fi
-# colors
-color_dir="colors"
-
-if [ "$1" == "--breeze-dark" ]; then
-  color="breeze-dark"
-elif [ "$1" == "--breeze-light" ]; then
-  color="breeze-light"
-elif [ "$1" == "--hanokira" ]; then
-  color="hanokira"
-elif [ "$1" == "--sweet" ]; then
-  color="sweet"
-elif [ "$1" == "--shimaray" ]; then
-  color="shimaray"
-elif [ "$1" == "--catppuccin" ]; then
-  color="catppuccin"
-elif [ "$1" == "--custom" ]; then
-  color="custom"
-  color_dir="colors-custom"
-fi
-mv "$color_dir"/colors."$color".scss colors/colors.scss # this will be reset after the script runs
-
 # libadwaita
 if [ "$2" == "--libadwaita" ]; then
   mkdir -p ~/.config/gtk-4.0/
@@ -71,5 +42,6 @@ cp index.theme ~/.themes/"$theme_name"/
 mv colors/colors.scss "$color_dir"/colors."$color".scss
 
 # exit
-echo "To install libadwata version, add --libadwaita argument at the end."
+# remove echo to install libadwaita until actually usable (arg still exists)
+#echo "To install libadwata version, add --libadwaita argument at the end."
 exit 0

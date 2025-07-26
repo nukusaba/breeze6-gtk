@@ -1,31 +1,24 @@
-@use "../colors/colors.scss" as *;
-
 // im lazy
 *:disabled {
-  color: rgba($window_fg_inactive,0.6);
+  color: unquote("@theme_unfocused_view_text_color_breeze");
 }
 *:selected {
-  background-color: $selection_bg_normal;
-  color: $selection_fg_normal;
+  background-color: unquote("@theme_selected_bg_color_breeze");
+  color: unquote("@theme_selected_fg_color_breeze");
 }
 
 *:link {
-  color: $window_fg_link;
+  color: unquote("@link_color_breeze");
 }
 *:visited {
-  color: $window_fg_link_visited;
+  color: unquote("@link_visited_color_breeze");
 }
 
 
 .dim-label {
-  color: $window_fg_inactive;
-}
-
-* {
-  font-weight: $font-weight;
+  color: unquote("@theme_unfocused_view_text_color_breeze");
 }
 
 .monospace {
-  font-family: $mono-font;
-  font-size: $font-size;
+  font-family: monospace;
 }

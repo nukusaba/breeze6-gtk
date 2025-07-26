@@ -1,8 +1,3 @@
-@use "../colors/colors.scss" as *;
-
-// copied from old version, and fixed up a bit.
-
-
 // scale
 scale {
   margin-right: 10px;
@@ -16,12 +11,12 @@ levelbar trough block {
   border-radius: 6px;
 }
 levelbar trough block.empty {
-  background-color: $button_bg_normal;
-  border: 1px solid rgba($button_fg_normal, 0.2);
+  background-color: unquote("@theme_button_background_normal_breeze");
+  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
 }
 levelbar trough block.filled {
-  background-color: rgba($selection_bg_normal, 0.2);
-  border: 1px solid $selection_bg_normal;
+  background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+  border: 1px solid unquote("@theme_selected_bg_color_breeze");
 }
 
 // progressbar
@@ -29,8 +24,8 @@ progressbar trough,
 scale fill,
 scale trough {
   border-radius: 6px;
-  background-color: $button_bg_normal;
-  border: 1px solid rgba($button_fg_normal, 0.2);
+  background-color: unquote("@theme_button_background_normal_breeze");
+  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   min-width: 6px;
   min-height: 6px;
   margin: 5px;
@@ -40,25 +35,25 @@ scale trough {
 progressbar trough:disabled,
 scale fill:disabled,
 scale trough:disabled {
-  background-color: rgba($button_bg_normal, 0.8);
-  border: 1px solid rgba($button_fg_normal, 0.1);
+  background-color: unquote("alpha(@theme_button_background_normal_breeze,0.8)");
+  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
 }
 progressbar progress,
 scale highlight {
-  background-color: rgba($selection_bg_normal, 0.2);
-  border: 1px solid $selection_bg_normal;
+  background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+  border: 1px solid unquote("@theme_selected_bg_color_breeze");
   border-radius: 6px;
   margin: -1px;
 }
 progressbar progress:disabled,
 scale highlight:disabled {
-  background-color: rgba($selection_bg_normal, 0.1);
-  border: 1px solid rgba($selection_bg_normal, 0.6);
+  background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.1)");
+  border: 1px solid unquote("alpha(@theme_selected_bg_color_breeze,0.6)");
 }
 scale slider,
 progressbar slider {
-  background-color: $button_bg_normal;
-  border: 1px solid mix($button_bg_normal, $button_fg_normal, 80%);
+  background-color: unquote("@theme_button_background_normal_breeze");
+  border: 1px solid unquote("mix(@theme_button_background_normal_breeze, @theme_button_foreground_normal_breeze, 0.2)");
   min-height: 10px;
   min-width: 10px;
   margin: -11px;
@@ -66,15 +61,15 @@ progressbar slider {
 }
 scale slider:hover,
 progressbar slider:hover {
-  border-color: $selection_bg_normal;
+  border-color: unquote("@theme_selected_bg_color_breeze");
 }
 scale slider:hover:active
 progressbar slider:hover:active {
-  border-color: $selection_bg_normal;
-  background-color: mix($button_bg_normal, $selection_bg_normal, 80%);
+  border-color: unquote("@theme_selected_bg_color_breeze");
+  background-color: unquote("mix(@theme_button_background_normal_breeze, @theme_selected_bg_color_breeze, 0.2)");
 }
 scale slider:disabled,
 progressbar slider:disabled {
-  background-color: mix($button_bg_normal, $view_bg_normal, 70%);
-  border: 1px solid mix($button_bg_normal, $button_fg_normal, 95%);
+  background-color: unquote("mix(@theme_button_background_normal_breeze, @content_view_bg_breeze, 0.3)");
+  border: 1px solid unquote("mix(@theme_button_background_normal_breeze, @theme_button_foreground_normal_breeze, 0.05)");
 }

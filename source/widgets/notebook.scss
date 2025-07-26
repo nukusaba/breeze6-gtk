@@ -1,22 +1,20 @@
-@use "../colors/colors.scss" as *;
-
 // there's like two different kinds of notebook in breeze, idk why, but there is, and idk which one to make, so i can choose between the easy one, and the hard one, and i'll go with the hard one (for now)
 // notebook
 notebook arrow {
-  color: $window_fg_normal;
+  color: unquote("@theme_fg_color_breeze");
 
   &:hover {
-    color: $selection_bg_normal;
+    color: unquote("@theme_selected_bg_color_breeze");
   }
   &:disabled {
-    color: rgba($window_fg_normal,0.6);
+    color: unquote("@theme_unfocused_view_text_color_breeze");
   }
 }
 notebook tab {
   border: 1px solid transparent;
   border-top: 3px solid transparent;
-  background-color: $view_bg_normal;
-  color: $view_fg_normal;
+  background-color: unquote("@content_view_bg_breeze");
+  color: unquote("@theme_fg_color_breeze");
   padding: 5px;
 
   &:first-child {
@@ -34,19 +32,19 @@ notebook tab {
   }
 
   &:hover {
-    background-color: rgba($selection_bg_normal,0.1);
+    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.1)");
   }
   &:checked,
   &:active:hover {
-    background-color: $view_bg_normal;
-    border-color: rgba($view_fg_normal,0.2);
-    border-top-color: $selection_bg_normal;
+    background-color: unquote("@content_view_bg_breeze");
+    border-color: unquote("alpha(@theme_fg_color_breeze,0.2)");
+    border-top-color: unquote("@theme_selected_bg_color_breeze");
     border-radius: 6px 6px 0 0;
     margin-bottom: -1px;
-    border-bottom-color: $view_bg_normal;
+    border-bottom-color: unquote("@content_view_bg_breeze");
 
     & label {
-      border-color: $selection_bg_normal;
+      border-color: unquote("@theme_selected_bg_color_breeze");
     }
   }
 }

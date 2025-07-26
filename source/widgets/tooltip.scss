@@ -1,5 +1,3 @@
-@use "../colors/colors.scss" as *;
-
 tooltip {
   & decoration {
     background: none;
@@ -7,12 +5,12 @@ tooltip {
     box-shadow: none;
   }
 
-  background-color: $tooltip_bg_normal;
+  background-color: unquote("@tooltip_background_breeze");
   padding: 7px;
-  border: 1px solid rgba($tooltip_fg_normal,0.3);
+  border: 1px solid unquote("@tooltip_border_breeze");
   border-radius: 6px;
 
   & * {
-    color: $tooltip_fg_normal;
+    color: unquote("@tooltip_text_breeze");
   }
 }

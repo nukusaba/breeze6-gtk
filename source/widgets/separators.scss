@@ -1,13 +1,11 @@
-@use "../colors/colors.scss" as *;
-
 separator {
-  background-color: rgba($window_fg_normal,0.2);
+  background-color: unquote("@borders_breeze");
   margin: 3px;
   min-width: 1px;
   min-height: 1px;
 
   &.horizontal {
-    background-color: rgba($window_fg_normal,0.2);
+    background-color: unquote("@borders_breeze");
   }
 
   // FUCK YOU VERTICAL SEPARATOR, INTO THE ABYSS YOU GO!

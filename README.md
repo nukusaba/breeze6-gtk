@@ -14,7 +14,7 @@ This *"project"* is a just something i do for fun when there is a reason for me 
 GTK3 (and probably GTK4 non-libadwaita) is pretty much done and usable. Libadwaita is completly broken still, will be worked on (maybe).
 
 ## Dependencies
-- Dart Sass (pre v3.0.0)
+- Dart Sass (pre v3.0.0) (cuz i cant be bothered fixing deprecated stuff)
 
 ## Installation
 - Clone repo
@@ -24,15 +24,9 @@ cd breeze6-gtk/source
 ```
 
 - Install theme <br>
-You can run without a argument to see all colorscheme options.
 ```
-./build-install.sh --[colorscheme]
-```
-
-If you want to make your own colorscheme you can do so in the `colors-custom/colors.custom.scss` file and than run.
-```
-./build-install.sh --custom
+./build-install.sh
 ```
 
 ## Colorschemes
-All preset colorschemes are schemes that i personaly use, colorschemes will only be added when i use them.
+Colorschemes are matched to your current plasma colorscheme automaticaly finally!

@@ -1,5 +1,3 @@
-@use "../colors/colors.scss" as *;
-
 // reset stuff
 * {
   padding: 0;
@@ -11,7 +9,7 @@
 
 // view
 .view, .view:hover {
-  background-color: $view_bg_normal
+  background-color: unquote("@content_view_bg_breeze")
 }
 
 // headerbar
@@ -29,7 +27,7 @@ headerbar{
 }
 
 notebook > header {
-  background-color: $window_bg_normal;
+  background-color: unquote("@theme_bg_color_breeze");
 }
 
 // to be continued

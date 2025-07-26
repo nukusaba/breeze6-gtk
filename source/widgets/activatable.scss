@@ -1,9 +1,7 @@
-@use "../colors/colors.scss" as *;
-
 // buttons but with another name, because we couldnt just leave it at having buttons, we needed buttons that are buttons, but not buttons.
 .activatable {
   background-color: transparent;
-  color: $view_fg_normal;
+  color: unquote("@theme_text_color_breeze");
   border: 1px solid transparent;
   margin: 2px;
   margin-left: 4px;
@@ -16,21 +14,21 @@
   }
 
   &:hover {
-    background-color: rgba($window_decoration_focus,0.2);
-    color: $view_fg_normal;
-    border-color: $window_decoration_focus;
+    background-color: unquote("alpha(@theme_button_decoration_focus_breeze,0.2)");
+    color: unquote("@theme_text_color_breeze");
+    border-color: unquote("@theme_button_decoration_focus_breeze");
   }
   &:selected,
   &:hover:active {
-    background-color: $selection_bg_normal;
-    color: $selection_fg_normal;
-    border-color: $selection_bg_normal;
+    background-color: unquote("@theme_selected_bg_color_breeze");
+    color: unquote("@theme_selected_fg_color_breeze");
+    border-color: unquote("@theme_selected_bg_color_breeze");
 
     & image {
-      color: $selection_fg_normal;
+      color: unquote("@theme_selected_fg_color_breeze");
     }
     & button:hover:active {
-      background-color: rgba($selection_fg_normal,0.3);
+      background-color: unquote("alpha(@theme_selected_fg_color_breeze,0.3)");
     }
   }
 }
@@ -47,12 +45,12 @@ flowbox, flowbox.content{
   background: none;
 }
 flowbox flowboxchild:selected{
-  background-color: rgba($window_fg_normal,0.15);
+  background-color: unquote("alpha(@theme_text_color_breeze,0.15)");
 }
 
 .app-notification{
-  background-color: $tooltip_bg_normal;
-  color: $tooltip_fg_normal;
+  background-color: unquote("@tooltip_background_breeze");
+  color: unquote("@tooltip_border_breeze");
   padding: 10px;
   border-radius: 6px;
 }
@@ -62,25 +60,37 @@ flowbox flowboxchild:selected{
   border: none;
 }
 .content, .content .activatable {
-  background-color: $view_bg_normal;
-  color: $view_fg_normal;
+  background-color: unquote("@content_view_bg_breeze");
+  color: unquote("@theme_text_color_breeze");
   border-radius: 0;
   padding: 0;
   margin: 0;
 }
 .content {
-  border: 1px solid mix($view_bg_normal,black,50%);
+  border: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
   box-shadow:
-    -1px 0 0 0 rgba($view_fg_normal,0.05),
-    1px 0 0 0 rgba($view_fg_normal,0.05);
-  border-bottom: 1px solid rgba($breeze_shade,0.7);
+    -1px 0 0 0 unquote("alpha(@theme_text_color_breeze,0.05)"),
+    1px 0 0 0 unquote("alpha(@theme_text_color_breeze,0.05)");
+  border-bottom: 1px solid unquote("alpha(@breeze_shade,0.7)");
   border-top: none;
   margin-left: 1px;
   margin-right: 1px;
 
-  &:first-child { border-top: 1px solid mix($view_bg_normal,black,50%); box-shadow: 0 -1px 0 0 rgba($view_fg_normal,0.05); margin-top: 1px; }
-  &:last-child { border-bottom: 1px solid mix($view_bg_normal,black,50%); box-shadow: 0 1px 0 0 rgba($view_fg_normal,0.05); margin-bottom: 1px; }
-  &:only-child { border: 1px solid mix($view_bg_normal,black,50%); box-shadow: 0 0 0 1px rgba($view_fg_normal,0.05); margin: 1px; }
+  &:first-child {
+    border-top: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
+    box-shadow: 0 -1px 0 0 unquote("alpha(@content_view_bg_breeze,0.5)");
+    margin-top: 1px;
+  }
+  &:last-child {
+    border-bottom: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
+    box-shadow: 0 1px 0 0 unquote("alpha(@content_view_bg_breeze,0.5)");
+    margin-bottom: 1px;
+  }
+  &:only-child {
+    border: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
+    box-shadow: 0 0 0 1px unquote("alpha(@content_view_bg_breeze,0.5)");
+    margin: 1px;
+  }
 
   // fixing some stuff inside just to be sure
   & entry {
@@ -107,9 +117,9 @@ flowbox flowboxchild:selected{
 .content .activatable {
   border: none;
   &:hover{
-    background-color: rgba($view_fg_normal,0.05);
+    background-color: unquote("alpha(@theme_text_color_breeze,0.05)");
   }
   &:hover:active{
-    color: $view_fg_normal;
+    color: unquote("@theme_text_color_breeze");
   }
 }
