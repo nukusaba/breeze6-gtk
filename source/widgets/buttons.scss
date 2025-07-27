@@ -28,7 +28,7 @@ button {
   &:hover:active, &.flat:hover:active,
   headerbar .linked &:hover:active {
     border-color: unquote("@theme_selected_bg_color_breeze");
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    background-color: image(unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
   }
   &:checked, &.flat:checked,
   headerbar .linked &:checked {
@@ -61,9 +61,15 @@ colorswatch.activatable{
 .view header button {
   border-radius: 0;
   margin-top: 1px;
+  border: none;
+  border-right: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+
+  &:last-child {
+    border: none;
+  }
 
   &:hover {
-    background-color: unquote("alpha(@theme_button_decoration_hover_breeze,0.3)");
+    background-image: image(unquote("alpha(@theme_button_decoration_hover_breeze,0.3)"));
     border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
 }
