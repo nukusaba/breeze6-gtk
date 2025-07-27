@@ -34,6 +34,7 @@ tooltip decoration {
     & > frame,
     & > .frame {
       border: none;
+      box-shadow: none;
     }
 
     .sidebar & {
@@ -49,6 +50,13 @@ tooltip decoration {
   & frame border {
     box-shadow: none;
     border: none;
+    box-shadow: 0 0 0 1px unquote("@borders_breeze");
+  }
+  & .frame {
+    border: 1px solid unquote("@borders_breeze");
+  }
+  & > .frame {
+    border: none;
   }
 }
 
@@ -56,7 +64,7 @@ tooltip decoration {
 .sidebar {
   background-color: unquote("@content_view_bg_breeze");
   color: unquote("@theme_fg_color_breeze");
-  border-rigt: 1px solid unquote("@borders_breeze");
+  border-right: 1px solid unquote("@borders_breeze");
 }
 
 // section frames, because frames arent frames, unless they are framed but differently than other frames
@@ -66,7 +74,8 @@ frame border {
 .section-frame > label {
   color: unquote("alpha(@theme_fg_color_breeze,0.7)");
 }
-frame .frame {
+frame .frame,
+.frame .frame {
   border: none;
 }
 
