@@ -7,7 +7,7 @@ switch {
   border: 1px solid;
   border-radius: 12px;
   color: transparent;
-  background-color: unquote("alpha(@theme_button_background_normal_breeze,0.05)");
+  background-color: unquote("@theme_button_background_normal_breeze");
   border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   text-shadow: none;
 }
@@ -15,12 +15,12 @@ switch:disabled {
   background-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.03)");
 }
 switch:checked {
-  background: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+  background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
   border-color: unquote("@theme_selected_bg_color_breeze");
 }
 switch:checked:disabled,
 label:disabled selection:checked {
-  background: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+  background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.2)"));
   border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.7)");
 }
 switch:dir(ltr):checked slider {
