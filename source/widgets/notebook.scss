@@ -37,7 +37,7 @@ notebook tab {
   &:checked,
   &:active:hover {
     background-color: unquote("@content_view_bg_breeze");
-    border-color: unquote("alpha(@theme_fg_color_breeze,0.2)");
+    border-color: unquote("@borders_breeze");
     border-top-color: unquote("@theme_selected_bg_color_breeze");
     border-radius: 6px 6px 0 0;
     margin-bottom: -1px;
