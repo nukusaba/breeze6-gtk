@@ -3,7 +3,7 @@ headerbar {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 6px;
-  box-shadow: 0 1px 0 unquote("@borders_breeze");
+  border-bottom: 1px solid unquote("@borders_breeze");
 
   &:backdrop {
     background-color: unquote("@theme_titlebar_background_backdrop_breeze");
