@@ -4,8 +4,8 @@ window.background.csd.unified {
   background-color: unquote("@theme_header_background_breeze");
   border-radius: 6px 6px 0 0;
   box-shadow:
-    0 0 0 1px unquote("alpha(@window_fg_normal,0.3)"),
-    0 0 40px unquote("alhpa(@shade_breeze6,0.4)");
+    0 0 0 1px unquote("@borders_breeze"),
+    0 0 40px unquote("alpha(@shade_breeze,0.4)");
   margin: 10px;
 }
 
