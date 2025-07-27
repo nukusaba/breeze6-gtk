@@ -20,7 +20,7 @@ button {
     border-radius: 999px;
   }
 
-  &:hover, &.flat:hover
+  &:hover, &.flat:hover,
   &:checked:hover, &.flat:checked:hover,
   headerbar .linked &:hover, headerbar .linked &:checked:hover {
     border-color: unquote("@theme_selected_bg_color_breeze");
@@ -146,7 +146,7 @@ combobox button {
     border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
 
-  &:hover, &.flat:hover
+  &:hover, &.flat:hover,
   &:checked:hover, &.flat:checked:hover,
   .linked &:hover, .linked &:checked:hover {
     border-color: unquote("@theme_selected_bg_color_breeze");
@@ -164,7 +164,7 @@ combobox button {
 
   .linked &:first-child,
   .linked &:last-child,
-  .linked &:only-child
+  .linked &:only-child,
   .linked & {
     border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
