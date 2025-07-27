@@ -3,6 +3,7 @@ scrollbar {
   min-height: 25px;
   padding: 5px;
   padding-left: 2px;
+  border: none;
 
   & button {
     min-height: 0;
@@ -14,7 +15,7 @@ scrollbar {
 
   & slider {
     min-width: 7px;
-    min-height: 7px;
+    min-height: 30px;
     background-color: unquote("alpha(@theme_fg_color_breeze,0.2)");
     box-shadow: 0 0 0 1px unquote("alpha(@theme_fg_color_breeze,0.3)");
     border-radius: 999px;
