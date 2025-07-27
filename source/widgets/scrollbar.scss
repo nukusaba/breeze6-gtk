@@ -15,8 +15,8 @@ scrollbar {
   & slider {
     min-width: 7px;
     min-height: 7px;
-    background-color: unquote("alpha(@theme_button_background_normal_breeze,0.2)");
-    box-shadow: 0 0 0 1px unquote("alpha(@theme_button_background_normal_breeze,0.3)");
+    background-color: unquote("alpha(@theme_fg_color_breeze,0.2)");
+    box-shadow: 0 0 0 1px unquote("alpha(@theme_fg_color_breeze,0.3)");
     border-radius: 999px;
   }
   & slider:hover {
