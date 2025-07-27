@@ -1,7 +1,7 @@
 button {
   background-color: unquote("@theme_button_background_normal_breeze");
-  color: unquote("@theme_fg_color_breeze");
-  border: 1px solid unquote("alpha(@theme_fg_color_breeze,0.2)");
+  color: unquote("@theme_button_foreground_normal_breeze");
+  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   padding: 7px;
   border-radius: 6px;
 
@@ -9,11 +9,12 @@ button {
   headerbar & {
     background-color: transparent;
     border-color: transparent;
+    color: unquote("@theme_fg_color_breeze");
   }
   headerbar .linked & {
     background-color: unquote("@theme_button_background_normal_breeze");
-    color: unquote("@theme_fg_color_breeze");
-    border-color: unquote("alpha(@theme_fg_color_breeze,0.2)");
+    color: unquote("@theme_button_foreground_normal_breeze");
+    border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
   &.circular {
     border-radius: 999px;
@@ -112,24 +113,27 @@ button.destructive-action {
   &:last-child {
     margin-right: 10px;
   }
+  &:first-child {
+    margin-left: 9px;
+  }
 
   &:hover {
     background-color: unquote("@theme_titlebar_foreground_breeze");
-    color: unquote("@theme_header_foreground_breeze");
+    color: unquote("@theme_titlebar_background_breeze");
   }
   &:hover:active {
     background-color: unquote("alpha(@theme_titlebar_foreground_breeze,0.4)");
-    color: unquote("@theme_header_foreground_breeze");
+    color: unquote("@theme_titlebar_background_breeze");
   }
 
   &.close:hover {
-    background-color: unquote("mix(white,@error_color_breeze,0.1)");
+    background-color: unquote("mix(white,@error_color_breeze,0.6)");
   }
   &.close:backdrop:hover {
     background-color: unquote("@error_color_breeze");
   }
   &.close:hover:active {
-    background-color: unquote("mix(@theme_titlebar_background_breeze,@error_color_breeze,0.4)");
+    background-color: unquote("mix(black,@error_color_breeze,0.5)");
   }
 }
 
