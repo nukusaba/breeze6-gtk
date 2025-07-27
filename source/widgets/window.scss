@@ -23,7 +23,7 @@ tooltip decoration {
 // base background
 .background {
   background-color: unquote("@theme_bg_color_breeze");
-  color: unquote("@theme_text_color_breeze");
+  color: unquote("@theme_fg_color_breeze");
 }
 
 // frame
@@ -58,6 +58,11 @@ frame border {
 }
 frame .frame {
   border: none;
+}
+
+// text color in frames
+.frame, frame {
+  color: unquote("@theme_fg_color_breeze");
 }
 
 // toolbars
