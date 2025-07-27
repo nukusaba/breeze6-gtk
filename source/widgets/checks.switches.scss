@@ -79,14 +79,14 @@ check {
   &:checked {
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
     background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
-    color: unquote("@theme_button_foreground_normal_breeze");
+    color: unquote("@theme_fg_color_breeze");
     -gtk-icon-source:image(-gtk-recolor(url("assets/checkmark-symbolic.svg")));
   }
   &:indeterminate {
     -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")));
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
     background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
-    color: unquote("@theme_button_foreground_normal_breeze");
+    color: unquote("@theme_fg_color_breeze");
   }
 
   &:disabled {
@@ -97,7 +97,7 @@ check {
   &:disabled:checked {
     background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
-    color: unquote("alpha(@theme_button_foreground_normal_breeze,0.7)");
+    color: unquote("alpha(@theme_fg_color_breeze,0.7)");
   }
 }
 
@@ -120,7 +120,7 @@ radio {
   &:checked {
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
     background-color: unquote("alhpa(@theme_selected_bg_color_breeze,0.3)");
-    color: unquote("@theme_button_foreground_normal_breeze");
+    color: unquote("@theme_fg_color_breeze");
     -gtk-icon-source:image(-gtk-recolor(url("assets/bullet-symbolic.svg")));
   }
 
@@ -132,7 +132,7 @@ radio {
   &:disabled:checked {
     background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
-    color: unquote("alpha(@theme_button_foreground_normal_breeze,0.7)");
+    color: unquote("alpha(@theme_fg_color_breeze,0.7)");
   }
 }
 
