@@ -20,7 +20,7 @@ switch:checked {
 }
 switch:checked:disabled,
 label:disabled selection:checked {
-  background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.6)"));
+  background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.2)"));
   border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.7)");
 }
 switch:dir(ltr):checked slider {
