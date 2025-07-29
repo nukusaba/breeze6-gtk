@@ -33,6 +33,7 @@ button {
   &:checked, &.flat:checked,
   headerbar .linked &:checked {
     background-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.15)");
+    color: unquote("@theme_fg_color_breeze");
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.7)"); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
   }
 }
