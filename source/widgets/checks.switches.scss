@@ -119,7 +119,7 @@ radio {
   }
   &:checked {
     border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
-    background-color: unquote("alhpa(@theme_selected_bg_color_breeze,0.3)");
+    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
     color: unquote("@theme_fg_color_breeze");
     -gtk-icon-source:image(-gtk-recolor(url("assets/bullet-symbolic.svg")));
   }
