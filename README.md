@@ -12,14 +12,14 @@ This is a personal project. It might not work perfectly for everyone. If you wan
 - [ ] GTK4 Theme. (Check completion Notes)
 - [ ] Libadwaita Theme. (Check completion Notes)<br>
 
-### - Gtk3
+- **Gtk3**
       - Generaly done, and should be fully usable.
       - Tab bars (notebook) needs more fixes to look more like breeze.
       - Need to make decision on Tab bar (notebook) styling (breeze has two different styles, therefor its hard to do it acuratly).
       - Need to implement fade animations (sometimes buttons in breeze have them, sometimes they dont, so im contemplating on it).
-### - Gtk4 (No Libadwaita)
+- **Gtk4 (No Libadwaita)**
       - Untested, i do not know of any apps that dont use libadwaita that are also Gtk4. If you know of any, please write a Issue.
-### - Gtk4 (Libadwaita)
+- **Gtk4 (Libadwaita)**
       - Tested, completly broken, wont be worked on for a long while.
 
 ## Dependencies
