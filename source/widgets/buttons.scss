@@ -28,7 +28,7 @@ button {
   &:hover:active, &.flat:hover:active,
   headerbar .linked &:hover:active {
     border-color: unquote("@theme_selected_bg_color_breeze");
-    background-color: image(unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
+    background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
   }
   &:checked, &.flat:checked,
   headerbar .linked &:checked {
