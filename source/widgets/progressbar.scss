@@ -37,7 +37,7 @@ progressbar trough:disabled,
 scale fill:disabled,
 scale trough:disabled {
   background-color: unquote("alpha(@theme_fg_color_breeze,0.1)");
-  border: 1px solid unquote("alpha(@theme_fg_color_breeze,0.6)");
+  border: 1px solid unquote("alpha(@theme_fg_color_breeze,0.2)");
   color: unquote("alpha(@theme_fg_color_breeze,0.7)")
 }
 progressbar progress,
