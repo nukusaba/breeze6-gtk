@@ -11,7 +11,7 @@ menubar {
 
     &:hover {
       background-color: unquote("@theme_button_decoration_focus_breeze");
-      color: unquote("@theme_fg_color_breeze");
+      color: unquote("@theme_selected_fg_color_breeze");
     }
   }
   & menu menuitem, & .menu menuitem {
