@@ -4,14 +4,23 @@ A new GTK theme to mimic the Breeze Qt style used by KDE.
 **Why?** <br>
 The default Breeze GTK theme is kinda bad imo. <br>
 <br>
-This *"project"* is a just something i do for fun when there is a reason for me to update it. its not meant to be perfect, its just meant to give me some more accuracy between gtk and qt apps that i use. i do *not* test with anything that i dont personaly use.
-
+**NOTE** <br>
+This is a personal project. It might not work perfectly for everyone. If you want to reccomend apps to test with this theme, and eventually have fixes be implemented, please write a Issue.
 
 ## Completion
-- [x] GTK3 Theme.
-- [ ] GTK4 Theme. 
-- [ ] Libadwaita Theme. <br>
-GTK3 (and probably GTK4 non-libadwaita) is pretty much done and usable. Libadwaita is completly broken still, will be worked on (maybe).
+- [x] GTK3 Theme. (Check completion Notes)
+- [ ] GTK4 Theme. (Check completion Notes)
+- [ ] Libadwaita Theme. (Check completion Notes)<br>
+
+### - Gtk3
+      - Generaly done, and should be fully usable.
+      - Tab bars (notebook) needs more fixes to look more like breeze.
+      - Need to make decision on Tab bar (notebook) styling (breeze has two different styles, therefor its hard to do it acuratly).
+      - Need to implement fade animations (sometimes buttons in breeze have them, sometimes they dont, so im contemplating on it).
+### - Gtk4 (No Libadwaita)
+      - Untested, i do not know of any apps that dont use libadwaita that are also Gtk4. If you know of any, please write a Issue.
+### - Gtk4 (Libadwaita)
+      - Tested, completly broken, wont be worked on for a long while.
 
 ## Dependencies
 - Dart Sass (pre v3.0.0) (cuz i cant be bothered fixing deprecated stuff)
