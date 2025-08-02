@@ -51,6 +51,14 @@ frame .frame {
     box-shadow: none;
   }
 }
+// extra conditions
+frame > .frame, .frame > frame,
+frame > * > .frame, .frame > * > frame,
+.frame > .frame, frame > frame,
+.frame > * > .frame, frame > * > frame,
+.noborder, .noborder > .frame {
+  box-shadow: none;
+}
 
 // toolbars
 actionbar,
