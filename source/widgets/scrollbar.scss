@@ -1,9 +1,8 @@
 scrollbar {
   min-width: 7px;
-  min-height: 25px;
+  min-height: 7px;
   padding: 5px;
-  padding-left: 3px;
-  border: none;
+  border: 1px solid unquote("@borders_breeze");
 
   & button {
     min-height: 0;
@@ -15,7 +14,7 @@ scrollbar {
 
   & slider {
     min-width: 7px;
-    min-height: 30px;
+    min-height: 7px;
     background-color: unquote("alpha(@theme_fg_color_breeze,0.2)");
     box-shadow: 0 0 0 1px unquote("alpha(@theme_fg_color_breeze,0.3)");
     border-radius: 999px;
@@ -23,5 +22,28 @@ scrollbar {
   & slider:hover {
     background-color: unquote("alpha(@theme_button_decoration_hover_breeze,0.6)");
     box-shadow: 0 0 0 1px unquote("mix(@theme_button_decoration_hover_breeze,@theme_bg_color_breeze,0.5)");
+  }
+
+  &.horizontal {
+    border-left: none;
+    border-right: none;
+    frame &, .frame &, .dialog-vbox & {
+      border: none;
+    }
+
+    & slider {
+      min-width: 30px;
+    }
+  }
+  &.vertical {
+    border-top: none;
+    border-bottom: none;
+    frame &, .frame &, .dialog-vbox & {
+      border: none;
+    }
+
+    & slider {
+      min-height: 30px;
+    }
   }
 }
