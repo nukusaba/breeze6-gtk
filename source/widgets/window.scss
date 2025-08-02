@@ -26,66 +26,30 @@ tooltip decoration {
   color: unquote("@theme_fg_color_breeze");
 }
 
-// frame
-.frame{
-  background-color: unquote("mix(@content_view_bg_breeze,@theme_bg_color_breeze,0.5)");
+// frames
+.frame, frame {
   box-shadow: 0 0 0 1px unquote("@borders_breeze");
+  background-color: unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
+  margin: 1px;
 
-    & > frame,
-    & > .frame {
-      border: none;
-      box-shadow: none;
-    }
-
-    .sidebar &, &.sidebar {
-      background: none;
-      border: none;
-    }
-}
-.dialog-vbox {
-  background-color: unquote("mix(@content_view_bg_breeze,@theme_bg_color_breeze,0.5)");
-  box-shadow: 0 0 0 1px unquote("@borders_breeze");
-
-  & frame border {
-    box-shadow: none;
-    border: none;
-    box-shadow: 0 0 0 1px unquote("@borders_breeze");
-  }
-  & .frame {
-    border: 1px solid unquote("@borders_breeze");
-  }
-  & > .frame {
-    border: none;
+  & > .frame, & > frame {
+    margin: 0;
   }
 }
-
-// sidebar
-.sidebar {
-  background-color: unquote("@theme_bg_color_breeze");
-  color: unquote("@theme_fg_color_breeze");
-  border-right: 1px solid unquote("@borders_breeze");
-
-  .frame &, &.frame {
-    background: none;
-    border: none;
-  }
+frame .frame {
+  margin: 0;
 }
-
-// section frames, because frames arent frames, unless they are framed but differently than other frames
-frame border {
-  border: 1px solid unquote("@borders_breeze");
-}
-.section-frame > label {
-  color: unquote("alpha(@theme_fg_color_breeze,0.7)");
-}
-frame .frame,
-.frame .frame {
-  border: none;
-}
-
-// text color in frames
 .frame, frame {
   color: unquote("@theme_fg_color_breeze");
+}
+  // sidebar
+.sidebar {
+  background-color: unquote("@theme_bg_color_breeze");
+  border: none;
+
+  .frame &, & .frame, &.frame {
+    box-shadow: none;
+  }
 }
 
 // toolbars
