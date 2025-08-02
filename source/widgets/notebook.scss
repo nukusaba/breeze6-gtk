@@ -13,7 +13,7 @@ notebook arrow {
 notebook tab {
   border: 1px solid transparent;
   border-top: 3px solid transparent;
-  background-color: unquote("@content_view_bg_breeze");
+  background-color: unquote("alpha(black,0.2)");
   color: unquote("@theme_fg_color_breeze");
   padding: 5px;
 
