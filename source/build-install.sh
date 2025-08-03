@@ -10,7 +10,7 @@ fi
 theme_name="Breeze6-GTK"
 
 # libadwaita
-if [ "$2" == "--libadwaita" ]; then
+if [ "$1" == "--libadwaita" ]; then
   mkdir -p ~/.config/gtk-4.0/
   rm -rf ~/.config/gtk-4.0/*.css
   sass gtk4-dark.scss ~/.config/gtk-4.0/gtk-dark.css
@@ -37,9 +37,6 @@ cp -r assets/ ~/.themes/"$theme_name"/gtk-4.0/
 
 # index
 cp index.theme ~/.themes/"$theme_name"/
-
-# reset
-mv colors/colors.scss "$color_dir"/colors."$color".scss
 
 # exit
 # remove echo to install libadwaita until actually usable (arg still exists)
