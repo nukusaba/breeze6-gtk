@@ -64,9 +64,13 @@ colorswatch.activatable{
   margin-top: 1px;
   border: none;
   border-right: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  border-bottom: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  border-top: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
 
+  &:first-child {
+  }
   &:last-child {
-    border: none;
+    border-right: none;
   }
 
   &:hover {
