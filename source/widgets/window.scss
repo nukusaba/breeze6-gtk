@@ -28,7 +28,7 @@ tooltip decoration {
 
 // frames
 .frame, frame {
-  box-shadow: 0 0 0 1px unquote("@borders_breeze");
+  box-shadow: 0 0 0 1px unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
   background-color: unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
   margin: 1px;
 
