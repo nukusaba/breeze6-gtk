@@ -46,6 +46,7 @@ frame .frame {
 .sidebar {
   background-color: unquote("@theme_bg_color_breeze");
   border: none;
+  border-right: 1px solid unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
 
   .frame &, & .frame, &.frame {
     box-shadow: none;
