@@ -23,7 +23,7 @@ This is a personal project. It might not work perfectly for everyone. If you wan
   - Tested, completly broken, wont be worked on for a long while.
 
 ## Dependencies
-- Dart Sass (pre v3.0.0) (cuz i cant be bothered fixing deprecated stuff)
+- Dart Sass
 
 ## Installation
 - Clone repo
