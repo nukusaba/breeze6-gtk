@@ -1,9 +1,10 @@
+@use "sass:string";
 selection {
-  background-color: unquote("@theme_selected_bg_color_breeze");
-  color: unquote("@theme_selected_fg_color_breeze");
+  background-color: string.unquote("@theme_selected_bg_color_breeze");
+  color: string.unquote("@theme_selected_fg_color_breeze");
 
   &:backdrop {
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,.03)");
-    color: unquote("@theme_fg_color_breeze");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,.03)");
+    color: string.unquote("@theme_fg_color_breeze");
   }
 }

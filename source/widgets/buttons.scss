@@ -1,7 +1,8 @@
+@use "sass:string";
 button {
-  background-color: unquote("@theme_button_background_normal_breeze");
-  color: unquote("@theme_button_foreground_normal_breeze");
-  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  background-color: string.unquote("@theme_button_background_normal_breeze");
+  color: string.unquote("@theme_button_foreground_normal_breeze");
+  border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   padding: 7px;
   border-radius: 6px;
 
@@ -9,12 +10,12 @@ button {
   headerbar & {
     background-color: transparent;
     border-color: transparent;
-    color: unquote("@theme_fg_color_breeze");
+    color: string.unquote("@theme_fg_color_breeze");
   }
   headerbar .linked & {
-    background-color: unquote("@theme_button_background_normal_breeze");
-    color: unquote("@theme_button_foreground_normal_breeze");
-    border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+    background-color: string.unquote("@theme_button_background_normal_breeze");
+    color: string.unquote("@theme_button_foreground_normal_breeze");
+    border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
   &.circular {
     border-radius: 999px;
@@ -23,18 +24,18 @@ button {
   &:hover, &.flat:hover,
   &:checked:hover, &.flat:checked:hover,
   headerbar .linked &:hover, headerbar .linked &:checked:hover {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
   }
   &:hover:active, &.flat:hover:active,
   headerbar .linked &:hover:active {
-    border-color: unquote("@theme_selected_bg_color_breeze");
-    background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
+    background-image: image(string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
   }
   &:checked, &.flat:checked,
   headerbar .linked &:checked {
-    background-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.15)");
-    color: unquote("@theme_fg_color_breeze");
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.7)"); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
+    background-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.15)");
+    color: string.unquote("@theme_fg_color_breeze");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.7)"); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
   }
 }
 
@@ -63,9 +64,9 @@ colorswatch.activatable{
   border-radius: 0;
   margin-top: 1px;
   border: none;
-  border-right: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
-  border-bottom: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
-  border-top: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  border-right: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  border-bottom: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  border-top: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
 
   &:first-child {
   }
@@ -74,39 +75,39 @@ colorswatch.activatable{
   }
 
   &:hover {
-    background-image: image(unquote("alpha(@theme_button_decoration_hover_breeze,0.3)"));
-    border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+    background-image: image(string.unquote("alpha(@theme_button_decoration_hover_breeze,0.3)"));
+    border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
 }
 
 // extra states
 button.suggested-action {
-  background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
-  border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
+  background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+  border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
 
   &:hover {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
   }
 
   &:disabled {
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.1)");
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.1)");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
   }
 }
 button.destructive-action {
-  background-color: unquote("alpha(@error_color_breeze,0.2)");
-  border-color: unquote("alpha(@error_color_breeze,0.4)");
+  background-color: string.unquote("alpha(@error_color_breeze,0.2)");
+  border-color: string.unquote("alpha(@error_color_breeze,0.4)");
 
   &:hover {
-    border-color: unquote("@error_color_breeze");
+    border-color: string.unquote("@error_color_breeze");
   }
   &:hover:active {
-    background-color: unquote("alpha(@error_color_breeze,0.3)");
+    background-color: string.unquote("alpha(@error_color_breeze,0.3)");
   }
 
   &:disabled {
-    background-color: unquote("alpha(@error_color_breeze,0.1)");
-    border-color: unquote("alpha(@error_color_breeze,0.2)");
+    background-color: string.unquote("alpha(@error_color_breeze,0.1)");
+    border-color: string.unquote("alpha(@error_color_breeze,0.2)");
   }
 }
 
@@ -118,7 +119,7 @@ button.destructive-action {
   margin-right: 3px;
   background: none;
   border: none;
-  color: unquote("@theme_titlebar_foreground_breeze");
+  color: string.unquote("@theme_titlebar_foreground_breeze");
   border-radius: 999px;
 
   &:last-child {
@@ -129,54 +130,54 @@ button.destructive-action {
   }
 
   &:hover {
-    background-color: unquote("@theme_titlebar_foreground_breeze");
-    color: unquote("@theme_titlebar_background_breeze");
+    background-color: string.unquote("@theme_titlebar_foreground_breeze");
+    color: string.unquote("@theme_titlebar_background_breeze");
   }
   &:hover:active {
-    background-color: unquote("alpha(@theme_titlebar_foreground_breeze,0.4)");
-    color: unquote("@theme_titlebar_background_breeze");
+    background-color: string.unquote("alpha(@theme_titlebar_foreground_breeze,0.4)");
+    color: string.unquote("@theme_titlebar_background_breeze");
   }
 
   &.close:hover {
-    background-color: unquote("mix(white,@error_color_breeze,0.6)");
+    background-color: string.unquote("mix(white,@error_color_breeze,0.6)");
   }
   &.close:backdrop:hover {
-    background-color: unquote("@error_color_breeze");
+    background-color: string.unquote("@error_color_breeze");
   }
   &.close:hover:active {
-    background-color: unquote("mix(black,@error_color_breeze,0.5)");
+    background-color: string.unquote("mix(black,@error_color_breeze,0.5)");
   }
 }
 
 
 // combobox
 combobox button {
-  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
 
   .linked & {
-    border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+    border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
 
   &:hover, &.flat:hover,
   &:checked:hover, &.flat:checked:hover,
   .linked &:hover, .linked &:checked:hover {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
   }
   &:hover:active, &.flat:hover:active,
   .linked &:hover:active {
-    border-color: unquote("@theme_selected_bg_color_breeze");
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
   }
   &:checked, &.flat:checked,
   .linked &:checked {
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.15)");
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.7)"); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.15)");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.7)"); // keep border colored because i cant be bothered to try to fix that issue about the hover not applying, also, eventhough breeze wants this, its actually horible on a solid button.
   }
 
   .linked &:first-child,
   .linked &:last-child,
   .linked &:only-child,
   .linked & {
-    border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+    border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
 }

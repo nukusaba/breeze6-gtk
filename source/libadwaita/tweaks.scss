@@ -1,3 +1,4 @@
+@use "sass:string";
 // reset stuff
 * {
   padding: 0;
@@ -9,7 +10,7 @@
 
 // view
 .view, .view:hover {
-  background-color: unquote("@content_view_bg_breeze")
+  background-color: string.unquote("@content_view_bg_breeze")
 }
 
 // headerbar
@@ -27,7 +28,7 @@ headerbar{
 }
 
 notebook > header {
-  background-color: unquote("@theme_bg_color_breeze");
+  background-color: string.unquote("@theme_bg_color_breeze");
 }
 
 // to be continued

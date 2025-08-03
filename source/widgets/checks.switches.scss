@@ -1,3 +1,4 @@
+@use "sass:string";
 // switch.
 // converted from official breeze theme cuz i was too dumb to do this myself, bit messy.
 switch {
@@ -7,21 +8,21 @@ switch {
   border: 1px solid;
   border-radius: 12px;
   color: transparent;
-  background-color: unquote("@theme_button_background_normal_breeze");
-  border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  background-color: string.unquote("@theme_button_background_normal_breeze");
+  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   text-shadow: none;
 }
 switch:disabled {
-  background-color: unquote("alpha(@theme_button_background_normal_breeze,0.3)");
+  background-color: string.unquote("alpha(@theme_button_background_normal_breeze,0.3)");
 }
 switch:checked {
-  background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
-  border-color: unquote("@theme_selected_bg_color_breeze");
+  background-image: image(string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)"));
+  border-color: string.unquote("@theme_selected_bg_color_breeze");
 }
 switch:checked:disabled,
 label:disabled selection:checked {
-  background-image: image(unquote("alpha(@theme_selected_bg_color_breeze,0.2)"));
-  border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.7)");
+  background-image: image(string.unquote("alpha(@theme_selected_bg_color_breeze,0.2)"));
+  border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.7)");
 }
 switch:dir(ltr):checked slider {
   margin-left: 1px;
@@ -37,20 +38,20 @@ switch slider {
   border: 1px solid;
   border-radius: 12px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.125);
-  border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
-  background: unquote("@theme_button_background_normal_breeze");
+  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  background: string.unquote("@theme_button_background_normal_breeze");
 }
 switch:hover slider {
-  border-color: unquote("@theme_selected_bg_color_breeze");
+  border-color: string.unquote("@theme_selected_bg_color_breeze");
 }
 switch:focus slider {
-  border-color: unquote("@theme_selected_bg_color_breeze");
+  border-color: string.unquote("@theme_selected_bg_color_breeze");
 }
 switch:disabled slider {
   box-shadow: none;
-  color: unquote("alpha(@theme_button_foreground_normal_breeze,0.5)");
-  border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
-  background: unquote("alpha(@theme_button_background_normal_breeze,0.6)");
+  color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.5)");
+  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
+  background: string.unquote("alpha(@theme_button_background_normal_breeze,0.6)");
 }
 
 switch image,
@@ -62,77 +63,77 @@ switch:disabled image {
 // checkbox
 // back to writing stuff myself YAY
 check {
-  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
-  background-color: unquote("@theme_button_background_normal_breeze");
+  border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  background-color: string.unquote("@theme_button_background_normal_breeze");
   border-radius: 6px;
   margin: 3px;
   color: transparent;
 
   &:hover,
   &:checked:hover {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
   }
   &:hover:active {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
     background-color: unqutoe("alpha(@theme_selected_bg_color_breeze,0.3)");
   }
   &:checked {
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
-    color: unquote("@theme_fg_color_breeze");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    color: string.unquote("@theme_fg_color_breeze");
     -gtk-icon-source:image(-gtk-recolor(url("assets/checkmark-symbolic.svg")));
   }
   &:indeterminate {
     -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")));
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
-    color: unquote("@theme_fg_color_breeze");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    color: string.unquote("@theme_fg_color_breeze");
   }
 
   &:disabled {
-    background-color: unquote("@theme_button_background_normal_breeze,0.5");
+    background-color: string.unquote("@theme_button_background_normal_breeze,0.5");
     color: transparent;
-    border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
+    border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
   }
   &:disabled:checked {
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
-    color: unquote("alpha(@theme_fg_color_breeze,0.7)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
+    color: string.unquote("alpha(@theme_fg_color_breeze,0.7)");
   }
 }
 
 // Radio
 radio {
-  border: 1px solid unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
-  background-color: unquote("@theme_button_background_normal_breeze");
+  border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
+  background-color: string.unquote("@theme_button_background_normal_breeze");
   border-radius: 999px;
   margin: 3px;
   color: transparent;
 
   &:hover,
   &:checked:hover {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
   }
   &:hover:active {
-    border-color: unquote("@theme_selected_bg_color_breeze");
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
   }
   &:checked {
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
-    color: unquote("@theme_fg_color_breeze");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
+    color: string.unquote("@theme_fg_color_breeze");
     -gtk-icon-source:image(-gtk-recolor(url("assets/bullet-symbolic.svg")));
   }
 
   &:disabled {
-    background-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.5)");
+    background-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.5)");
     color: transparent;
-    border-color: unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
+    border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
   }
   &:disabled:checked {
-    background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
-    border-color: unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
-    color: unquote("alpha(@theme_fg_color_breeze,0.7)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+    border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.4)");
+    color: string.unquote("alpha(@theme_fg_color_breeze,0.7)");
   }
 }
 
@@ -150,7 +151,7 @@ menuitem, modelbutton {
 modelbutton {
   &:hover check, &:hover radio,
   &:hover:active check, &:hover:active radio {
-    color: unquote("@theme_selected_fg_color_breeze");
+    color: string.unquote("@theme_selected_fg_color_breeze");
   }
 }
 

@@ -1,7 +1,8 @@
+@use "sass:string";
 // buttons but with another name, because we couldnt just leave it at having buttons, we needed buttons that are buttons, but not buttons.
 .activatable {
   background-color: transparent;
-  color: unquote("@theme_text_color_breeze");
+  color: string.unquote("@theme_text_color_breeze");
   border: 1px solid transparent;
   margin: 2px;
   margin-left: 4px;
@@ -14,21 +15,21 @@
   }
 
   &:hover {
-    background-color: unquote("alpha(@theme_button_decoration_focus_breeze,0.2)");
-    color: unquote("@theme_text_color_breeze");
-    border-color: unquote("@theme_button_decoration_focus_breeze");
+    background-color: string.unquote("alpha(@theme_button_decoration_focus_breeze,0.2)");
+    color: string.unquote("@theme_text_color_breeze");
+    border-color: string.unquote("@theme_button_decoration_focus_breeze");
   }
   &:selected,
   &:hover:active {
-    background-color: unquote("@theme_selected_bg_color_breeze");
-    color: unquote("@theme_selected_fg_color_breeze");
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    background-color: string.unquote("@theme_selected_bg_color_breeze");
+    color: string.unquote("@theme_selected_fg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
 
     & image {
-      color: unquote("@theme_selected_fg_color_breeze");
+      color: string.unquote("@theme_selected_fg_color_breeze");
     }
     & button:hover:active {
-      background-color: unquote("alpha(@theme_selected_fg_color_breeze,0.3)");
+      background-color: string.unquote("alpha(@theme_selected_fg_color_breeze,0.3)");
     }
   }
 }
@@ -45,12 +46,12 @@ flowbox, flowbox.content{
   background: none;
 }
 flowbox flowboxchild:selected{
-  background-color: unquote("alpha(@theme_text_color_breeze,0.15)");
+  background-color: string.unquote("alpha(@theme_text_color_breeze,0.15)");
 }
 
 .app-notification{
-  background-color: unquote("@tooltip_background_breeze");
-  color: unquote("@tooltip_border_breeze");
+  background-color: string.unquote("@tooltip_background_breeze");
+  color: string.unquote("@tooltip_border_breeze");
   padding: 10px;
   border-radius: 6px;
 }
@@ -60,35 +61,35 @@ flowbox flowboxchild:selected{
   border: none;
 }
 .content, .content .activatable {
-  background-color: unquote("@content_view_bg_breeze");
-  color: unquote("@theme_text_color_breeze");
+  background-color: string.unquote("@content_view_bg_breeze");
+  color: string.unquote("@theme_text_color_breeze");
   border-radius: 0;
   padding: 0;
   margin: 0;
 }
 .content {
-  border: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
+  border: 1px solid string.unquote("mix(@content_view_bg_breeze,black,0.5)");
   box-shadow:
-    -1px 0 0 0 unquote("alpha(@theme_text_color_breeze,0.05)"),
-    1px 0 0 0 unquote("alpha(@theme_text_color_breeze,0.05)");
-  border-bottom: 1px solid unquote("alpha(@breeze_shade,0.7)");
+    -1px 0 0 0 string.unquote("alpha(@theme_text_color_breeze,0.05)"),
+    1px 0 0 0 string.unquote("alpha(@theme_text_color_breeze,0.05)");
+  border-bottom: 1px solid string.unquote("alpha(@breeze_shade,0.7)");
   border-top: none;
   margin-left: 1px;
   margin-right: 1px;
 
   &:first-child {
-    border-top: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
-    box-shadow: 0 -1px 0 0 unquote("alpha(@content_view_bg_breeze,0.5)");
+    border-top: 1px solid string.unquote("mix(@content_view_bg_breeze,black,0.5)");
+    box-shadow: 0 -1px 0 0 string.unquote("alpha(@content_view_bg_breeze,0.5)");
     margin-top: 1px;
   }
   &:last-child {
-    border-bottom: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
-    box-shadow: 0 1px 0 0 unquote("alpha(@content_view_bg_breeze,0.5)");
+    border-bottom: 1px solid string.unquote("mix(@content_view_bg_breeze,black,0.5)");
+    box-shadow: 0 1px 0 0 string.unquote("alpha(@content_view_bg_breeze,0.5)");
     margin-bottom: 1px;
   }
   &:only-child {
-    border: 1px solid unquote("mix(@content_view_bg_breeze,black,0.5)");
-    box-shadow: 0 0 0 1px unquote("alpha(@content_view_bg_breeze,0.5)");
+    border: 1px solid string.unquote("mix(@content_view_bg_breeze,black,0.5)");
+    box-shadow: 0 0 0 1px string.unquote("alpha(@content_view_bg_breeze,0.5)");
     margin: 1px;
   }
 
@@ -117,9 +118,9 @@ flowbox flowboxchild:selected{
 .content .activatable {
   border: none;
   &:hover{
-    background-color: unquote("alpha(@theme_text_color_breeze,0.05)");
+    background-color: string.unquote("alpha(@theme_text_color_breeze,0.05)");
   }
   &:hover:active{
-    color: unquote("@theme_text_color_breeze");
+    color: string.unquote("@theme_text_color_breeze");
   }
 }

@@ -1,17 +1,18 @@
+@use "sass:string";
 tooltip, tooltip.background {
   & decoration {
-    background: unquote("@tooltip_background_breeze");
+    background: string.unquote("@tooltip_background_breeze");
     border: none;
     box-shadow: none;
   }
 
-  background-color: unquote("@tooltip_background_breeze");
+  background-color: string.unquote("@tooltip_background_breeze");
   padding: 7px;
-  border: 1px solid unquote("@tooltip_border_breeze");
+  border: 1px solid string.unquote("@tooltip_border_breeze");
   border-radius: 6px;
 
   & * {
-    background-color: unquote("@tooltip_background_breeze");
-    color: unquote("@tooltip_text_breeze");
+    background-color: string.unquote("@tooltip_background_breeze");
+    color: string.unquote("@tooltip_text_breeze");
   }
 }

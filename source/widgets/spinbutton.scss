@@ -1,12 +1,13 @@
+@use "sass:string";
 spinbutton {
-  background-color: unquote("@content_view_bg_breeze");
-  color: unquote("@theme_fg_color_breeze");
-  border: 1px solid unquote("@borders_breeze");
+  background-color: string.unquote("@content_view_bg_breeze");
+  color: string.unquote("@theme_fg_color_breeze");
+  border: 1px solid string.unquote("@borders_breeze");
   padding: 7px;
   border-radius: 6px;
 
   &:focus {
-    border-color: unquote("@theme_selected_bg_color_breeze");
+    border-color: string.unquote("@theme_selected_bg_color_breeze");
   }
 
   & button,
@@ -18,7 +19,7 @@ spinbutton {
 
   & button:hover,
   & button:hover:active {
-    color: unquote("@theme_button_decoration_hover_breeze");
+    color: string.unquote("@theme_button_decoration_hover_breeze");
   }
 }
 

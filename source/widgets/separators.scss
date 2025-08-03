@@ -1,11 +1,12 @@
+@use "sass:string";
 separator {
-  background-color: unquote("@borders_breeze");
+  background-color: string.unquote("@borders_breeze");
   margin: 3px;
   min-width: 1px;
   min-height: 1px;
 
   &.horizontal {
-    background-color: unquote("@borders_breeze");
+    background-color: string.unquote("@borders_breeze");
   }
 
   // FUCK YOU VERTICAL SEPARATOR, INTO THE ABYSS YOU GO!

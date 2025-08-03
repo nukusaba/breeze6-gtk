@@ -1,22 +1,23 @@
+@use "sass:string";
 // im lazy
 *:disabled {
-  color: unquote("@theme_unfocused_view_text_color_breeze");
+  color: string.unquote("@theme_unfocused_view_text_color_breeze");
 }
 *:selected {
-  background-color: unquote("@theme_selected_bg_color_breeze");
-  color: unquote("@theme_selected_fg_color_breeze");
+  background-color: string.unquote("@theme_selected_bg_color_breeze");
+  color: string.unquote("@theme_selected_fg_color_breeze");
 }
 
 *:link {
-  color: unquote("@link_color_breeze");
+  color: string.unquote("@link_color_breeze");
 }
 *:visited {
-  color: unquote("@link_visited_color_breeze");
+  color: string.unquote("@link_visited_color_breeze");
 }
 
 
 .dim-label {
-  color: unquote("@theme_unfocused_view_text_color_breeze");
+  color: string.unquote("@theme_unfocused_view_text_color_breeze");
 }
 
 .monospace {

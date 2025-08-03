@@ -1,11 +1,12 @@
+@use "sass:string";
 // decoration
 decoration,
 window.background.csd.unified {
-  background-color: unquote("@theme_header_background_breeze");
+  background-color: string.unquote("@theme_header_background_breeze");
   border-radius: 6px 6px 0 0;
   box-shadow:
-    0 0 0 1px unquote("@borders_breeze"),
-    0 0 40px unquote("alpha(@shade_breeze,0.4)");
+    0 0 0 1px string.unquote("@borders_breeze"),
+    0 0 40px string.unquote("alpha(@shade_breeze,0.4)");
   margin: 10px;
 }
 
@@ -22,14 +23,14 @@ tooltip decoration {
 
 // base background
 .background {
-  background-color: unquote("@theme_bg_color_breeze");
-  color: unquote("@theme_fg_color_breeze");
+  background-color: string.unquote("@theme_bg_color_breeze");
+  color: string.unquote("@theme_fg_color_breeze");
 }
 
 // frames
 .frame, frame {
-  box-shadow: 0 0 0 1px unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
-  background-color: unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
+  box-shadow: 0 0 0 1px string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
+  background-color: string.unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
   margin: 1px;
 
   & > .frame, & > frame {
@@ -40,13 +41,13 @@ frame .frame {
   margin: 0;
 }
 .frame, frame {
-  color: unquote("@theme_fg_color_breeze");
+  color: string.unquote("@theme_fg_color_breeze");
 }
   // sidebar
 .sidebar {
-  background-color: unquote("@theme_bg_color_breeze");
+  background-color: string.unquote("@theme_bg_color_breeze");
   border: none;
-  border-right: 1px solid unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
+  border-right: 1px solid string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
 
   .frame &, & .frame, &.frame {
     box-shadow: none;

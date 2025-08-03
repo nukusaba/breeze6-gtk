@@ -1,20 +1,21 @@
+@use "sass:string";
 .view {
-  background-color: unquote("@content_view_bg_breeze");
-  color: unquote("@theme_fg_color_breeze");
+  background-color: string.unquote("@content_view_bg_breeze");
+  color: string.unquote("@theme_fg_color_breeze");
 
   &:hover {
-    background-color: unquote("alpha(@theme_unfocused_selected_bg_color_breeze,0.7)");
-    color: unquote("@theme_fg_color_breeze");
+    background-color: string.unquote("alpha(@theme_unfocused_selected_bg_color_breeze,0.7)");
+    color: string.unquote("@theme_fg_color_breeze");
   }
   &:selected {
-    background-color: unquote("@theme_selected_bg_color_breeze");
-    color: unquote("@theme_selected_fg_color_breeze");
+    background-color: string.unquote("@theme_selected_bg_color_breeze");
+    color: string.unquote("@theme_selected_fg_color_breeze");
   }
 }
 
 rubberband,
 .rubberband {
-  background-color: unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
-  border: 1px solid unquote("mix(white,@theme_selected_bg_color_breeze,0.6)");
+  background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.2)");
+  border: 1px solid string.unquote("mix(white,@theme_selected_bg_color_breeze,0.6)");
   border-radius: 6px;
 }

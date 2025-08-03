@@ -1,17 +1,18 @@
+@use "sass:string";
 // menu / menuitem
 menubar {
   background-color: transparent;
 
   & menuitem {
     background-color: transparent;
-    color: unquote("@theme_header_foreground_breeze");
+    color: string.unquote("@theme_header_foreground_breeze");
     padding: 7px;
     padding-left: 10px;
     padding-right: 10px;
 
     &:hover {
-      background-color: unquote("@theme_button_decoration_focus_breeze");
-      color: unquote("@theme_selected_fg_color_breeze");
+      background-color: string.unquote("@theme_button_decoration_focus_breeze");
+      color: string.unquote("@theme_selected_fg_color_breeze");
     }
   }
   & menu menuitem, & .menu menuitem {
@@ -20,23 +21,23 @@ menubar {
 }
 
 menu, .menu {
-  background-color: unquote("@content_view_bg_breeze");
-  color: unquote("@theme_fg_color_breeze");
+  background-color: string.unquote("@content_view_bg_breeze");
+  color: string.unquote("@theme_fg_color_breeze");
   padding: 4px;
-  border: 1px solid unquote("@borders_breeze");
+  border: 1px solid string.unquote("@borders_breeze");
   border-radius: 6px;
 
   & menuitem {
     background: none;
-    color: unquote("@theme_fg_color_breeze");
+    color: string.unquote("@theme_fg_color_breeze");
     border-radius: 6px;
     border: 1px solid transparent;
     padding: 4px;
 
     &:hover {
-      background-color: unquote("alpha(@theme_button_decoration_focus_breeze,0.3)");
-      border-color: unquote("@theme_button_decoration_focus_breeze");
-      color: unquote("@theme_fg_color_breeze");
+      background-color: string.unquote("alpha(@theme_button_decoration_focus_breeze,0.3)");
+      border-color: string.unquote("@theme_button_decoration_focus_breeze");
+      color: string.unquote("@theme_fg_color_breeze");
     }
   }
 }
@@ -44,22 +45,22 @@ menu, .menu {
 // popover
 // different from regular menus because breeze has two different menu styles, and this kinda emulates that
 popover, popover.background {
-  background-color: unquote("@content_view_bg_breeze");
-  color: unquote("@theme_fg_color_breeze");
-  border: 1px solid unquote("@borders_breeze");
+  background-color: string.unquote("@content_view_bg_breeze");
+  color: string.unquote("@theme_fg_color_breeze");
+  border: 1px solid string.unquote("@borders_breeze");
   border-radius: 6px;
 
 
   & modelbutton {
     background: none;
-    color: unquote("@theme_fg_color_breeze");
+    color: string.unquote("@theme_fg_color_breeze");
     border-radius: 6px;
     padding: 4px;
     margin-bottom: 3px;
 
     &:hover {
-      background-color: unquote("@theme_selected_bg_color_breeze");
-      color: unquote("@theme_selected_fg_color_breeze");
+      background-color: string.unquote("@theme_selected_bg_color_breeze");
+      color: string.unquote("@theme_selected_fg_color_breeze");
     }
     &:last-child {
       margin-bottom: 0;
