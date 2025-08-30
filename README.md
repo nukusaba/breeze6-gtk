@@ -38,7 +38,7 @@ This is a personal project. It might not work perfectly for everyone. If you wan
 ## Installation
 - Clone repo
 ```
-git clone https://github.com/mellowaru/breeze6-gtk.git
+git clone https://gitlab.com/sabaneko/breeze6-gtk.git
 cd breeze6-gtk/source
 ```
 
