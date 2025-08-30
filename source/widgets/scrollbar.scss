@@ -3,7 +3,7 @@ scrollbar {
   min-width: 7px;
   min-height: 7px;
   padding: 5px;
-  box-shadow: 0 0 0 1px string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
+  box-shadow: 0 0 0 1px string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)");
 
   & button {
     min-height: 0;
