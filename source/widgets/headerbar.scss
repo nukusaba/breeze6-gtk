@@ -4,7 +4,7 @@ headerbar {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 6px;
-  border-bottom: 1px solid string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
+  border-bottom: 1px solid string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)");
 
   &:backdrop {
     background-color: string.unquote("@theme_titlebar_background_backdrop_breeze");
