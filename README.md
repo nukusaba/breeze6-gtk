@@ -1,13 +1,19 @@
 # Breeze6 GTK
 A new GTK theme to mimic the Breeze Qt style used by KDE.
 
+---
+
 **Repostories:** [GitHub](https://github.com/nukusaba/breeze6-gtk) [GitLab](https://gitlab.com/sabaneko/breeze6-gtk). These repositories are automaticaly mirrored. However if you want to contribute please do so on the GitLab.
+
+---
 
 **Why?** <br>
 The default Breeze GTK theme is kinda bad imo. <br>
 <br>
 **NOTE** <br>
 This is a personal project. It might not work perfectly for everyone. If you want to reccomend apps to test with this theme, and eventually have fixes be implemented, please write a Issue.
+
+---
 
 ## Completion
 - [x] GTK3 Theme. (Check completion Notes)
@@ -24,6 +30,8 @@ This is a personal project. It might not work perfectly for everyone. If you wan
 - **Gtk4 (Libadwaita)**
   - Tested, completly broken, wont be worked on for a long while.
 
+---
+  
 ## Dependencies
 - Dart Sass
 
@@ -38,6 +46,8 @@ cd breeze6-gtk/source
 ```
 ./build-install.sh
 ```
+
+---
 
 ## Colorschemes
 Colorschemes are matched to your current plasma colorscheme automaticaly finally!
