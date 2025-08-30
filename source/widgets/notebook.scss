@@ -1,6 +1,7 @@
 @use "sass:string";
 // there's like two different kinds of notebook in breeze, idk why, but there is, and idk which one to make, so i can choose between the easy one, and the hard one, and i'll go with the hard one (for now)
 // notebook
+notebook > scrolledwindow > .frame {box-shadow: 0 0 0 1px string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)"); }
 notebook, notebook.background { background: none; }
 notebook arrow {
   color: string.unquote("@theme_fg_color_breeze");
@@ -12,6 +13,7 @@ notebook arrow {
     color: string.unquote("@theme_unfocused_view_text_color_breeze");
   }
 }
+
 notebook tab {
   border: 1px solid transparent;
   border-top: 3px solid transparent;

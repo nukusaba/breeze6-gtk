@@ -28,14 +28,10 @@ tooltip decoration {
 }
 
 // frames
-.frame, frame {
+frame {
   box-shadow: 0 0 0 1px string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
   background-color: string.unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
   margin: 1px;
-
-  & > .frame, & > frame {
-    margin: 0;
-  }
 }
 frame .frame {
   margin: 0;
@@ -53,14 +49,8 @@ frame .frame {
     box-shadow: none;
   }
 }
-// extra conditions
-frame > .frame, .frame > frame,
-frame > * > .frame, .frame > * > frame,
-.frame > .frame, frame > frame,
-.frame > * > .frame, frame > * > frame,
-.noborder, .noborder > .frame {
-  box-shadow: none;
-}
+
+scrolledwindow { box-shadow: 0 0 0 1px string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)"); }
 
 // toolbars
 actionbar,
