@@ -3,6 +3,7 @@ headerbar {
   background-color: string.unquote("@theme_titlebar_background_breeze");
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  min-height: 30px;
   padding: 6px;
   border-bottom: 1px solid string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)");
 
