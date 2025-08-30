@@ -28,6 +28,7 @@ tooltip decoration {
 }
 
 // frames
+.frame { background-color: string.unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)"); }
 frame {
   box-shadow: 0 0 0 1px string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)");
   background-color: string.unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
