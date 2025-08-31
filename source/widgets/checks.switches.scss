@@ -47,11 +47,15 @@ switch:hover slider {
 switch:focus slider {
   border-color: string.unquote("@theme_selected_bg_color_breeze");
 }
-switch:disabled slider {
-  box-shadow: none;
-  color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.5)");
-  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
-  background: string.unquote("alpha(@theme_button_background_normal_breeze,0.6)");
+switch:disabled {
+  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.005)")
+  
+  & slider {
+    box-shadow: none;
+    color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.5)");
+    border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.005)");
+    background: string.unquote("mix(@content_view_bg_breeze, @theme_button_background_normal_breeze,0.1)");
+  }
 }
 
 switch image,
