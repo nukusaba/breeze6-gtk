@@ -1,4 +1,8 @@
 .linked {
+  border: none;
+  box-shadow: none;
+  padding: 2px;
+  
   & * {
     border-radius: 0;
 
@@ -14,6 +18,7 @@
   }
 
   // button specifics to match linked buttons in kirta (only official kde app that has linked buttons to my knowlage)
+  & button { margin: 0; } // unset default margin
   & button:not(.combo):only-child, &button:not(.combo):first-child:only-child,
   & entry:only-child, &entry:first-child:only-child{
     margin-right: 0;
