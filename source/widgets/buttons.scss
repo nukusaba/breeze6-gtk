@@ -5,7 +5,6 @@ button {
   border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   padding: 7px;
   border-radius: 6px;
-  margin: 0 2px;
 
   &.flat,
   headerbar & {
