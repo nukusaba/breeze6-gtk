@@ -3,7 +3,7 @@ button {
   background-color: string.unquote("@theme_button_background_normal_breeze");
   color: string.unquote("@theme_button_foreground_normal_breeze");
   border: 1px solid string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
-  padding: 7px;
+  padding: 7px 8px;
   border-radius: 6px;
 
   &.flat,
@@ -18,7 +18,10 @@ button {
     border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.2)");
   }
   &.circular {
-    border-radius: 999px;
+    border-radius: 6px;
+    padding: 0px 2px;
+    background-color: transparent;
+    border-color: transparent;
   }
 
   &:hover, &.flat:hover,
