@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 if [[ -f "dir-check" ]]; then
   echo "Check file exists, continuing..."
