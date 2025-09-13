@@ -35,4 +35,11 @@ scrollbar {
       min-height: 30px;
     }
   }
+
+  .frame &,
+  scrolledwindow & {
+    background-color: string.unquote("alpha(@content_view_bg_breeze, 0.5)");
+  }
 }
+
+
