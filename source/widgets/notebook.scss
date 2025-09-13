@@ -4,7 +4,7 @@
 notebook, notebook.background {
   background: none;
   &.frame {
-    box-shadow: 0 0 0 1px string.unquote("mix(@theme_bg_color_breeze, @content_view_bg_breeze, 0.5)");
+    box-shadow: 0 0 0 1px string.unquote("alpha(@content_view_bg_breeze, 0.5)");
   }
 }
 notebook arrow {
@@ -44,12 +44,12 @@ notebook tab {
   }
   &:checked,
   &:active:hover {
-    background-color: string.unquote("@content_view_bg_breeze");
+    background-color: string.unquote("alpha(@content_view_bg_breeze, 0.5)");
     border-color: string.unquote("alpha(mix(@theme_selected_bg_color_breeze, @borders_breeze, 0.8), 0.5)");
     border-top-color: string.unquote("@theme_selected_bg_color_breeze");
     border-radius: 6px 6px 0 0;
-    margin-bottom: -1px;
-    border-bottom-color: string.unquote("@content_view_bg_breeze");
+    margin-bottom: 0;
+    border-bottom: 1px solid string.unquote("mix(@content_view_bg_breeze, @theme_bg_color_breeze, 0.5)");
 
     & label {
       border-color: string.unquote("@theme_selected_bg_color_breeze");
