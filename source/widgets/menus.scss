@@ -21,7 +21,7 @@ menubar {
 }
 
 menu, .menu {
-  background-color: string.unquote("@content_view_bg_breeze");
+  background-color: string.unquote("mix(@content_view_bg_breeze, @theme_bg_color_breeze, 0.5)");
   color: string.unquote("@theme_fg_color_breeze");
   padding: 4px;
   border: 1px solid string.unquote("@borders_breeze");
@@ -45,7 +45,7 @@ menu, .menu {
 // popover
 // different from regular menus because breeze has two different menu styles, and this kinda emulates that
 popover, popover.background {
-  background-color: string.unquote("@content_view_bg_breeze");
+  background-color: string.unquote("mix(@content_view_bg_breeze, @theme_bg_color_breeze, 0.5)");
   color: string.unquote("@theme_fg_color_breeze");
   border: 1px solid string.unquote("@borders_breeze");
   border-radius: 6px;
