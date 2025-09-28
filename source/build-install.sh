@@ -12,12 +12,14 @@ theme_name="Breeze6-GTK"
 
 # libadwaita
 if [ "$1" == "--libadwaita" ]; then
-  mkdir -p ~/.config/gtk-4.0/
-  rm -rf ~/.config/gtk-4.0/*.css
-  sass gtk4-dark.scss ~/.config/gtk-4.0/gtk-dark.css
-  sass gtk4.scss ~/.config/gtk-4.0/gtk.css
-  rm ~/.config/gtk-4.0/*.map
-  cp -r assets/ ~/.config/gtk-4.0/
+  cp adwaita_temp/gtk.css ~/.config/gtk-4.0/
+  echo "installed colors to $HOME/.config/gtk-4.0/gtk.css"
+  #mkdir -p ~/.config/gtk-4.0/
+  #rm -rf ~/.config/gtk-4.0/*.css
+  #sass gtk4-dark.scss ~/.config/gtk-4.0/gtk-dark.css
+  #sass gtk4.scss ~/.config/gtk-4.0/gtk.css
+  #rm ~/.config/gtk-4.0/*.map
+  #cp -r assets/ ~/.config/gtk-4.0/
   exit 0
 fi
 
@@ -51,5 +53,6 @@ cp index.theme ~/.themes/"$theme_name"/
 
 # exit
 # remove echo to install libadwaita until actually usable (arg still exists)
-#echo "To install libadwata version, add --libadwaita argument at the end."
+echo "To install the colorscheme for libadwata, add --libadwaita argument at the end."
+echo "Note: --libadwaita currently ONLY applies the same colorscheme automation"
 exit 0
