@@ -60,7 +60,8 @@ scrolledwindow { box-shadow: 0 0 0 1px string.unquote("mix(@content_view_bg_bree
 
 // toolbars
 actionbar,
-.primary-toolbar {
+.primary-toolbar,
+toolbar {
   padding: 5px;
 }
 
