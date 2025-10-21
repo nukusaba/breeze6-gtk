@@ -71,13 +71,13 @@ toolbar {
 /*
 decoration,
 window.background.csd.unified {
-  background-color: unquote("@theme_header_background_breeze");
+  background-color: string.unquote("@theme_header_background_breeze");
   border-radius: 0;
-  box-shadow: 0 0 0 4px unquote("@theme_button_decoration_focus_breeze");
+  box-shadow: 0 0 0 2px string.unquote("@theme_button_decoration_focus_breeze");
   margin: 10px;
 
   &:backdrop {
-    box-shadow: 0 0 0 4px unquote("@theme_bg_color_breeze");
+    box-shadow: 0 0 0 2px string.unquote("@theme_bg_color_breeze");
   }
 }
 */
