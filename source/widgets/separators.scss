@@ -20,8 +20,8 @@ separator {
 
 // paned is probably the most annoying thing in gtk, it will break any theme you make unless you KILL IT.
 paned separator:not(.horizontal) {
-  margin: -1;
+  margin: -1px;
   padding: 0;
   background: none;
-  color: 0;
+  color: transparent;
 }

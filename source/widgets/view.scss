@@ -11,9 +11,9 @@
     background-color: string.unquote("@theme_selected_bg_color_breeze");
     color: string.unquote("@theme_selected_fg_color_breeze");
   }
-  
+
   & entry {
-    border-radius: 6;
+    border-radius: 6px;
     padding: 2px;
   }
 }

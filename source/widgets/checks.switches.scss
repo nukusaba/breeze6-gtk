@@ -48,7 +48,7 @@ switch:focus slider {
   border-color: string.unquote("@theme_selected_bg_color_breeze");
 }
 switch:disabled {
-  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.005)")
+  border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.005)");
 
   & slider {
     box-shadow: none;
@@ -82,7 +82,7 @@ check {
   }
   &:hover:active {
     border-color: string.unquote("@theme_selected_bg_color_breeze");
-    background-color: unqutoe("alpha(@theme_selected_bg_color_breeze,0.3)");
+    background-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.3)");
   }
   &:checked {
     border-color: string.unquote("alpha(@theme_selected_bg_color_breeze,0.5)");
@@ -98,7 +98,7 @@ check {
   }
 
   &:disabled {
-    background-color: string.unquote("@theme_button_background_normal_breeze,0.5");
+    background-color: string.unquote("alpha(@theme_button_background_normal_breeze,0.5)");
     color: transparent;
     border-color: string.unquote("alpha(@theme_button_foreground_normal_breeze,0.1)");
   }
