@@ -33,10 +33,9 @@ tooltip decoration {
 frame {
   box-shadow: 0 0 0 1px string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)");
   background-color: string.unquote("alpha(@content_view_bg_breeze, 0.5)");
-  padding: 5px;
 }
 border {
-  box-shadow: 0 0 0 1px string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)")
+  box-shadow: 0 0 0 1px string.unquote("mix(@content_view_bg_breeze, @borders_breeze, 0.7)");
 
   frame & { box-shadow: none; }
 }
@@ -45,6 +44,7 @@ frame .frame {
 }
 .frame, frame {
   color: string.unquote("@theme_fg_color_breeze");
+  margin: 1px;
 }
   // sidebar
 .sidebar {
