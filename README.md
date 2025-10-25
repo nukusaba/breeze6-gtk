@@ -29,6 +29,7 @@ This is a personal project. It might not work perfectly for everyone. If you wan
   - Untested, i do not know of any apps that dont use libadwaita that are also Gtk4. If you know of any, please write a Issue.
 - **Gtk4 (Libadwaita)**
   - Tested, completly broken, wont be worked on for a long while.
+  - Colorscheme for libadwaita exists, however not a full theme.
 
 ---
   
