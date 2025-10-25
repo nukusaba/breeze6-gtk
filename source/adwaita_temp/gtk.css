@@ -94,5 +94,5 @@
 @define-color dark_5 #000000;
 
 
-window { border-radius: 6px 6px 0 0; }
-* { font-weight: 600; }
+window { border-radius: 6px; }
+* { font-weight: 400; }

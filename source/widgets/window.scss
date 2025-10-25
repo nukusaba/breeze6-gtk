@@ -3,11 +3,12 @@
 decoration,
 window.background.csd.unified {
   background-color: string.unquote("@theme_header_background_breeze");
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
   box-shadow:
     0 0 0 1px string.unquote("@borders_breeze"),
     0 0 40px string.unquote("alpha(@shade_breeze,0.4)");
   margin: 10px;
+  padding-bottom: 6px;
 }
 
 // this is needed because decorations are on other things than the window, eventhough those should be targeted sepperatly anyway.
