@@ -3,7 +3,7 @@ A new GTK theme to mimic the Breeze Qt style used by KDE.
 
 ---
 
-**Repostories:** [GitHub](https://github.com/nukusaba/breeze6-gtk) [GitLab](https://gitlab.com/sabaneko/breeze6-gtk). These repositories are automaticaly mirrored. However if you want to contribute please do so on the GitLab.
+**Repostories:** [GitHub](https://github.com/snow-hai/breeze6-gtk) [GitLab](https://gitlab.com/snow-hai/breeze6-gtk). These repositories are automaticaly mirrored. However if you want to contribute please do so on the GitLab.
 
 ---
 
